@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+    {% block content %}
+
+    <section class="account-wrap ptb-100">
+        <div class="container">
+            <div class="section-title style1 text-center mb-40 mt-40">
+           
+                <h2>Login to access your account</h2>
+            </div>
+
+            <form action="" class="account-form" method="POST">
+
+                {% csrf_token %}
+
+                {{form|crispy}}
+
+                <div class="col-md-12">
+                    <button type="submit" class="btn style1 w-100 d-block"> Login</button>
+                </div>
+
+            </form>
+            <p>Don't have an account ? <a href="{% url 'register' %}">Register</a></p>
+        </div>
+    </section>
+  
+        
+
+
+
+
+    {% endblock %}
+
+
+
+
+        {% block js %}
+        <script>
+   
+            $(document).ready(function(){
+              $(document).scrollTop(15)
+            })
+        </script>
+  
+        {% endblock %}
+    
+	
