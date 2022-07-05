@@ -3,7 +3,7 @@ import email
 from django import forms
 from django.forms import ModelForm
 from django.contrib.auth.forms import UserCreationForm,UserChangeForm
-from .models import User,NewsLaterSubscriber,Settings,KYC
+from .models import User,NewsLaterSubscriber,Settings
 
 
 class SettingForm(ModelForm) :
@@ -25,16 +25,10 @@ class VerifyEmailForm(forms.Form) :
         super(VerifyEmailForm,self).__init__(*args,**kwargs)
    
 
-class WalletForm(ModelForm) :
- 
-    class Meta() :
-        model  = User
-        fields = ["_wallet_name","_wallet_address"]
 
 
 
 class UserCreateForm(UserCreationForm) :
-    referral_id = forms.CharField(required  = False)
 
     def __init__(self,*args,**kwargs) :
         super(UserCreateForm,self).__init__(*args,**kwargs)
@@ -66,7 +60,7 @@ class UserCreateForm(UserCreationForm) :
 
     class Meta(UserCreationForm.Meta) :
         model = User
-        fields = UserCreationForm.Meta.fields + ('name','username','email','phone_number','country')
+        fields = UserCreationForm.Meta.fields + ('name','username','email','phone_number')
     
 
 
@@ -78,7 +72,7 @@ class ProfileForm(ModelForm) :
 
     class Meta() :
         model  = User
-        fields = ['name','email','phone_number','country']
+        fields = ['name','email','phone_number']
  
 
 class SubscribeForm(forms.ModelForm)  :
@@ -93,10 +87,3 @@ class SubscribeForm(forms.ModelForm)  :
             raise forms.ValidationError("You have already subscribed !")
         return email
 
-
-class KycForm(forms.ModelForm) :
-
-
-    class Meta() :
-        model = KYC
-        exclude = ['user','is_accepted','date']

@@ -3,8 +3,6 @@ from django.shortcuts import render
 from django.views.generic import CreateView,View,RedirectView
 from django.http import HttpResponseRedirect,HttpResponse
 from django.contrib.auth.mixins import LoginRequiredMixin
-from wallet.models import Wallet
-from myadmin.models import MyAdmin
 from core.notification import Notification
 from core.mail import Email
 from .models import  Settings, User

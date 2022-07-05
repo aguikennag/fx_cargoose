@@ -8,9 +8,9 @@ def core(request) :
     ctx = {}
 
     ctx['liquidity'] = 53199180
-    ctx['site_name_verbose'] = "Afflus Trade"
-    ctx['site_name'] = "Afflus Trade"
-    ctx['site_name_full'] = "Afflus Trade"
+    ctx['site_name_verbose'] = "GTC Cargoose"
+    ctx['site_name'] = "GTC Cargoose"
+    ctx['site_name_full'] = "GTC Cargoose"
     ctx['support_email'] = "support@afflus-trade.com"
     ctx['site_email'] = "support@afflus-trade.com"
     ctx['site_phone'] = "+3594858"

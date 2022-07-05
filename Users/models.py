@@ -23,13 +23,7 @@ class Country(models.Model) :
 
 
 class User(AbstractUser) :
-    wallet_choices = (
-        ("BTC","BTC"),
-        ("ETH","ETH"),
-        ("USDT","USDT"),
-        ("LTC","LTC")
-    )
-    
+
     def get_path(instance,filename) :
         filename = "{}.{}".format(instance.name,filename.split('.')[1])
         return "users/dp/{}".format(filename)
@@ -37,18 +31,7 @@ class User(AbstractUser) :
     name = models.CharField(max_length=30)
     phone_number = models.CharField(max_length = 30,blank = False,null = False)
     picture = models.FileField(upload_to = get_path)
-    referee = models.ForeignKey('self',blank = True,null=True,related_name ="referral",on_delete = models.SET_NULL)
-    referral_id  = models.CharField(max_length=10,blank = True,editable = False)
-
-    is_admin = models.BooleanField(default = False)
-    country = models.ForeignKey(Country,on_delete = models.SET_NULL,null = True)
-    
-    #payment wallet
-    _wallet_name = models.CharField(max_length=10,null  = True,choices = wallet_choices)
-    _wallet_address = models.CharField(max_length=100,null  = True,help_text = "BEP20 address")
-    
-    email_verified = models.BooleanField(default= False)
-    kyc_verified = models.BooleanField(default=False)
+   
 
     class Meta() :
         ordering = ['date_joined']
@@ -61,24 +44,9 @@ class User(AbstractUser) :
         for field in self.__fields_to_watch_for_changes :
             setattr(self,'__initial_{}'.format(field),getattr(self,field)) 
 
-    @property
-    def withdrawal_wallet_name(self) :
-        return self._wallet_name
 
-    @property
-    def withdrawal_wallet_address(self) :
-        return self._wallet_address    
 
-    def handle_due_investments(self) :
-        due_investments = self.investment.filter(
-            is_active = True,
-            plan_end__lte = timezone.now()
-        ) 
-        
-        for investment in due_investments :
-            investment.on_plan_complete()
-            
-
+ 
 
     @property
     def unique_id(self) :
@@ -93,20 +61,6 @@ class User(AbstractUser) :
         
         return self.picture.url  
 
-    @property
-    def wallet_address_valid(self) :
-        if not self._wallet_address or not self._wallet_name :
-            return False
-        return True        
-
-    @property
-    def active_investments(self) :
-        return self.investment.filter(
-            is_active = True,
-            is_approved = True
-            )    
-  
-  
     def has_changed(self,field) :
         original = "__initial_{}".format(field) 
         return getattr(self,original)  == getattr(self,field)            
@@ -145,35 +99,6 @@ class Settings(models.Model) :
     def __str__(self) :
         return "{}-setting".format(self.user.username)
 
-
-class WalletAddress(models.Model)  :
-    user = models.ForeignKey(get_user_model(),related_name = "wallet_address",on_delete = models.CASCADE)  
-    btc_address = models.CharField(max_length=60)
-    usdt_address = models.CharField(max_length=60)
-    eth_address = models.CharField(max_length=60)
-
-
-
-class KYC(models.Model) :
-    user = models.ForeignKey(get_user_model(),related_name = 'kyc',on_delete = models.CASCADE)
-    is_accepted = models.BooleanField(default=False)
-    first_name = models.CharField(max_length=30)
-    last_name = models.CharField(max_length=30)
-    phone_number = models.CharField(max_length = 30,blank = False,null = False)
-    address = models.CharField(max_length=100)
-    nationality  = models.CharField(max_length=100)
-    passport = models.FileField(upload_to="kyc/passport/",blank=True)
-    national_id_front = models.FileField(upload_to="kyc/national_id_front/",blank=True)
-    national_id_back = models.FileField(upload_to="kyc/national_id_back/",blank=True)
-    driving_license = models.FileField(upload_to="kyc/driving_license/",blank=True)
-    
-    date = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self) : 
-        return self.user.username
-
-    class Meta() :
-        ordering = ['-date']    
 
 
 
