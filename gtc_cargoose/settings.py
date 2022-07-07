@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'Users.apps.UsersConfig',
     'company.apps.CompanyConfig',
     'core.apps.CoreConfig',
+    'myadmin.apps.MyadminConfig',
+    'logistics.apps.LogisticsConfig',
     'crispy_forms',
 
     #3rd party

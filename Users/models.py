@@ -74,7 +74,6 @@ class User(AbstractUser) :
         if self.has_changed('email') :
             self.email_verified = False
         self.slug = slugify(self.name) 
-        if not self.referral_id  : self.referral_id = random.randrange(999999,99999999999)
         super(User,self).save(*args,**kwargs)
 
     class Meta() :
