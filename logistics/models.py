@@ -11,7 +11,6 @@ class Station(models.Model) :
 
 
 
-
 class Shipment(models.Model) :
 
 
@@ -21,17 +20,17 @@ class Shipment(models.Model) :
     
     #package info
     package_name = models.CharField(max_length=20)
-    weight = models.PositiveIntegerField()   #in kg
+    weight = models.FloatField(help_text="in kg")   #in kg
     tracking_number = models.CharField(default= get_tracking_number, max_length=8,blank = True)
     is_fragile = models.BooleanField(default=False)
     is_paid = models.BooleanField(default=False,blank = True)
-    shipment_fee = models.DecimalField(decimal_places=2,max_digits=100,blank = True)
+    shipment_fee = models.DecimalField(decimal_places=2,max_digits=100,blank = True,help_text = "in dollars($)")
     
     #shipment info
     source_country = models.ForeignKey(Country,on_delete = models.CASCADE,related_name="shipment_source")
     source_address = models.CharField(max_length = 200) 
     destination_country = models.ForeignKey(Country,on_delete = models.CASCADE,related_name = "shipment_destination")
-    destination_adresss = models.CharField(max_length = 200)
+    destination_address = models.CharField(max_length = 200)
     
     #sender info
     sender_name = models.CharField(max_length = 40)
@@ -39,13 +38,9 @@ class Shipment(models.Model) :
     sender_phone_number = models.CharField(max_length = 20)
     sender_email = models.EmailField()
 
-    def save(self,*args,**kwargs) :
-        if not self.pk :
-            #send email that the shipment has been registered
-            #create first status 
-            self.status_logs.objects.create(status = "registered")
-            #StatusLog.objects.create(shipment = self,status = "registered")
+    date = models.DateTimeField(auto_now_add = True)
 
+    def save(self,*args,**kwargs) :
         super(Shipment,self).save(*args,**kwargs)
 
     @property

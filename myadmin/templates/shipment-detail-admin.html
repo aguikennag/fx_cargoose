@@ -1,0 +1,50 @@
+{% extends 'admin-base.html' %}
+{% load static %}
+{% load humanize %}
+
+
+{% block content %}
+<div class="user-content">
+    <div class="user-panel" style="margin: -50px -50px 0px  -50px;">
+        <!--div class="col-12">
+            <div class="row">
+                <div class="col-6">
+                    <div class="tile-item tile-light">
+                        <div class="tile-bubbles"></div>
+                        <h6 class="tile-title">WALLET BALANCE</h6>
+                        <ul class="tile-info-list">
+                            <li><span>$1.646</span></li>
+                          
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="tile-item tile-light">
+                        <div class="tile-bubbles"></div>
+                        <h6 class="tile-title">PENDING DEPOSIT</h6>
+                        <ul class="tile-info-list">
+                            <li><span style="color:green">+$1.646</span></li>
+                          
+                        </ul>
+                        <h6 class="tile-title">PENDING WITHDRAWAL</h6>
+                        <ul class="tile-info-list">
+                            <li><span style="color:red">-$1.646</span></li>
+                          
+                        </ul>
+                    </div>
+                    
+
+                </div>
+
+            </div>
+          
+        </div><!-- .col -->
+        <h2 class="user-panel-title">Shipment  : <b>{{shipment.tracking_number}}</b></h2>
+        <div class="table-responsive">
+           
+        </div>
+
+    </div><!-- .user-panel -->
+</div><!-- .user-content -->
+
+{% endblock %}

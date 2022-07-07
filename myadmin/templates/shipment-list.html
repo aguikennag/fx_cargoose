@@ -1,0 +1,96 @@
+{% extends 'admin-base.html' %}
+{% load static %}
+{% load humanize %}
+
+
+{% block content %}
+<div class="user-content">
+    <div class="user-panel" style="margin: -50px -50px 0px  -50px;">
+        <!--div class="col-12">
+            <div class="row">
+                <div class="col-6">
+                    <div class="tile-item tile-light">
+                        <div class="tile-bubbles"></div>
+                        <h6 class="tile-title">WALLET BALANCE</h6>
+                        <ul class="tile-info-list">
+                            <li><span>$1.646</span></li>
+                          
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="tile-item tile-light">
+                        <div class="tile-bubbles"></div>
+                        <h6 class="tile-title">PENDING DEPOSIT</h6>
+                        <ul class="tile-info-list">
+                            <li><span style="color:green">+$1.646</span></li>
+                          
+                        </ul>
+                        <h6 class="tile-title">PENDING WITHDRAWAL</h6>
+                        <ul class="tile-info-list">
+                            <li><span style="color:red">-$1.646</span></li>
+                          
+                        </ul>
+                    </div>
+                    
+
+                </div>
+
+            </div>
+          
+        </div><!-- .col -->
+        <h2 class="user-panel-title">Shipments</h2>
+        <div class="table-responsive">
+            {% if not shipments %}
+            <div class="status status-empty">
+                <div class="status-icon">
+                    <em class="ti ti-files"></em>
+                    <div class="status-icon-sm">
+                        <em class="ti ti-close"></em>
+                    </div>
+                </div>
+                <span class="status-text">No shipment has been created yet</span>
+
+            </div> 
+            {% else %}
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>S/N</th>
+                        <th>Tracking no.</th>
+                        <th>Parcel name</th>
+                        <th>Weight</th>
+                        <th>Shipment Fee</th>
+                        <th>Source</th>
+                        <th>Destination</th>
+                        <th>Last Status</th>
+                        <th>Date Created </th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for shipment in shipments %}
+                    <tr>
+                        <td>{{forloop.counter}}</td>
+                        <td>{{shipment.tracking_number}}</td>
+                        <td>{{shipment.package_name}}</td>
+                        <td>{{shipment.weight}}Kg</td>
+                        <td>${{shipment.shipment_fee}}</td>
+                        <td>{{shipment.source_address}}, {{shipment.source_country}}</td>
+                        <td>{{shipment.destination_address}}, {{shipment.destination_country}}</td>
+                        <td>{{shipment.shipment_status_log.status_verbose}} @ {{shipment.shipment_status_log.date_since}}</td>
+                        <td><span>{{shipment.date}}</span></td>
+                        <td><a href="{% url 'shipment-detail' shipment.tracking_number %}">View Shipment</a></td>
+                       
+                    </tr>
+                    {% endfor %}
+                 
+                </tbody>
+            </table>
+            {% endif %}
+        </div>
+
+    </div><!-- .user-panel -->
+</div><!-- .user-content -->
+
+{% endblock %}
