@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.exceptions import ObjectDoesNotExist
 import uuid
 import re
 
@@ -43,13 +44,74 @@ class Shipment(models.Model) :
     def save(self,*args,**kwargs) :
         super(Shipment,self).save(*args,**kwargs)
 
+    def update_status_log(self)   :
+        statuses = [value for name,value in StatusLog.StatusChoices]
+        current_status = self.last_status_log.status
+        #update to next
+        #get current index 
+        _index = statuses.index(current_status) 
+        if _index < len(statuses) - 1 :
+            #anything above means its already in transit then we do nothing
+            StatusLog.objects.create(shipment = self,status = statuses[_index + 1])
+        else : 
+            return "You cannot update status log any further, shipment is already in {}".format(current_status)  #meaning error     
+       
+
+    def roll_back_status_log(self) :
+        statuses = [value for name,value in StatusLog.StatusChoices]
+        current_status = self.last_status_log.status
+        #update to next
+        #get current index 
+        _index = statuses.index(current_status) 
+        if _index > 0 :
+            #anything below 1 means its already in transit in the beigining, we cannot roll back further]
+            #delete last log
+            self.last_status_log.delete()
+        else : 
+            return "You cannot roll back status log any further, shipment is in {} status".format(current_status)  #meaning error  
+ 
+    @property
+    def is_in_transit(self) :
+        try : 
+            #if the shipment has a transit log then its in transit
+            transit_logs = self.transit_logs.all() 
+            if transit_logs.count() > 0 : return True   
+        except ObjectDoesNotExist :  pass
+
+        return False
+
+
+    @property
+    def timeline_logs(self) :
+        status_logs = self.status_logs.all()
+        try : transit_logs = self.transit_logs.all()    
+        except ObjectDoesNotExist : transit_logs = None
+       
+        #combine
+        timeline = []
+        for log in status_logs :
+            logs = {}
+            logs['date'] = log.date
+            logs['status'] = log.status_verbose
+            timeline.append(logs)
+
+        if transit_logs :  
+            for log in transit_logs : 
+                logs = {}
+                logs['date'] = log.date
+                logs['status'] = log.status_verbose
+                timeline.append(logs)
+
+        return timeline    
+
     @property
     def last_status_log(self) :
         return self.status_logs.all()[0]
 
     @property
     def last_transit_log(self) :
-        return self.transit_logs.all()[0]
+        try : return self.transit_logs.all()[0]
+        except ObjectDoesNotExist : return    
 
     @property
     def shipment_status_log(self)  :
@@ -77,9 +139,10 @@ class Shipment(models.Model) :
      
 
 class StatusLog(models.Model) :
+    initial_terminal_name = "Collecting"
     
     StatusChoices = (
-        ("registered","registred"),
+        ("registered","registered"),
         ("received","received"),
         ("processing","processing"),
         ("in transit","in transit")
@@ -100,8 +163,20 @@ class StatusLog(models.Model) :
             _ = self.shipment.transit_logs
             
         super(StatusLog,self).save(*args,**kwargs) 
+    
+    @property
+    def status_verbose(self) :
+        if self.status == "registered" :
+            return "Package has just been registered, but not yet received at initial terminal".format(self.initial_terminal_name)
+        
+        elif self.status == "received" :
+            return "Package has been received at {} terminal, awaiting processing.".format(self.initial_terminal_name)
+        
+        elif self.status == "processing" :
+            return "Package is been processed at {} terminal".format(self.initial_terminal_name)
 
-
+        else :
+            return "Package has left {} terminal and is now in transit".format(self.initial_terminal_name)
 
 
 class TransitLog(models.Model) :
@@ -120,12 +195,12 @@ class TransitLog(models.Model) :
     @property
     def status_verbose(self) :
         if self.status == "arrived" :
-            return "Arrived at {} terminal".format(self.station.name)
+            return "Package has arrived at {} terminal, awaiting processing".format(self.station.name)
 
         elif self.status == "processing" :
-            return "Being processed at {} terminal".formst(self.station.name)  
+            return "Package is being processed at {} terminal".formst(self.station.name)  
 
-        else : return "dispatched to the next terminal"      
+        else : return "Package has been dispatched to the next terminal"      
 
 
     class Meta() :

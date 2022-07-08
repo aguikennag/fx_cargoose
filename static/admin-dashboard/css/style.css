@@ -2526,7 +2526,7 @@ a:active {
   }
 }
 
-/** Select **/
+/** select **/
 select:focus {
   outline: none;
   border: none;

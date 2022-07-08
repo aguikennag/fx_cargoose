@@ -72,6 +72,7 @@ TEMPLATES = [
         'DIRS': [
             os.path.join(BASE_DIR,'templates'), 
             os.path.join(BASE_DIR,'Users/templates'), 
+            os.path.join(BASE_DIR,'core/templates'), 
             os.path.join(BASE_DIR,'templates/email'), 
             os.path.join(BASE_DIR,'templates/registration'),
             os.path.join(BASE_DIR,'templates/admin dashboard'),  

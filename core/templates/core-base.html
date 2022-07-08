@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx" class="js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Softnio">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="{% static 'main2/css/vendor.bundle.css' %}?ver=1930">
+    <link rel="stylesheet" href="{% static 'main2/css/style.css' %}?ver=1930" id="changeTheme">
+    <!-- Extra CSS -->
+    <link rel="stylesheet" href="{% static 'main2/css/theme.css' %}?ver=1930">
+
+
+
+
+</head>
+
+
+
+<body class="nk-body body-wider bg-light">
+
+    <div class="nk-wrap">
+        {% block content %}  {% endblock %}
+    </div>
+
+ 
+    <!-- JavaScript -->
+    <script src="{% static 'main2/js/jquery.bundle.js' %}" ?ver=1930"></script>
+    <script src="{% static 'main2/js/scripts.js' %}" ?ver=1930"></script>
+    <script src="{% static 'main2/js/charts.js' %}""></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+{% extends 'core-base.html' %}
+
+{% block content %}
+<main class="nk-pages">
+    <div class="section section-roadmap " id="roadmap">
+        <h5>Shipment Timeline for : #{{ctx.shipment.tracking_number}}</h5>
+        <div class="container pt-4">
+            <!-- Block @s -->
+            <div class="nk-block nk-block-roadmap">
+                <div class="row justify-content-center">
+                    <div class="col-xl-10">
+                        <div class="roadmap-wrap mb-0">
+                            {% for log in ctx.timeline %}
+                            <div class="roadmap-line"></div>
+                            <div class="roadmap">
+                                <div style="width:fit-content" class="roadmap-year">{{log.date}}</div>
+                            </div>
+                            <div class="roadmap roadmap-right roadmap-finished">
+                                <div class="roadmap-step">
+                                    <!--div class="roadmap-head">
+                                        <span class="roadmap-time">March 2018</span>
+                                        <span class="roadmap-title">Concept development</span>
+                                    </div-->
+                                    <p>{{log.status}}</p>
+                                </div>
+                            </div>
+                            {% endfor %}
+
+
+                        </div>
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div>
+            <!-- Block @e -->
+        </div>
+
+    </div>
+</main>
+
+{% endblock %}

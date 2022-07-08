@@ -1,12 +1,12 @@
 from django.shortcuts import render
-from django.views.generic import View,TemplateView,ListView
+from django.views.generic import View,TemplateView,ListView,CreateView
 from django.contrib.auth.mixins import LoginRequiredMixin,UserPassesTestMixin
 from django.urls import reverse
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect,HttpResponse
 
-from logistics.models import Shipment
+from logistics.models import Shipment, StatusLog,TransitLog
 
-from .forms import ShipmentForm
+from .forms import ShipmentForm,StatusLogForm,TransitLogForm
 
 
 class CreateShipment(LoginRequiredMixin,UserPassesTestMixin,View)  :
@@ -43,7 +43,69 @@ class  Shipments(LoginRequiredMixin,UserPassesTestMixin,ListView) :
 
 
 
-class AddStatusLog() : pass
+class AddStatusLog(LoginRequiredMixin,UserPassesTestMixin,CreateView) : 
+    def test_func(self) :
+        return self.request.user.is_superuser
+
+    model = StatusLog
+    form_class = StatusLogForm
+
+    def get_success_url(self) :
+        return reverse("shipment-detail",args=[self.kwargs['tracking_number']])
+
+    def form_valid(self,form) :
+        shipment = Shipment.objects.filter(tracking_number = self.kwargs['tracking_number'])
+        if not shipment.exists() : return HttpResponse("This shipment no longer exists")
+        form.save(commit = False)
+        form.instance.shipment = shipment.first()
+        form.save()
+        return form
 
 
-class AddTransitLog() : pass
+
+
+
+class AddTransitLog(LoginRequiredMixin,UserPassesTestMixin,CreateView) : 
+    
+    def test_func(self) :
+        return self.request.user.is_superuser
+
+    model = TransitLog
+    form_class = TransitLogForm
+
+    def get_success_url(self) :
+        return reverse("shipment-detail",args=[self.kwargs['tracking_number']])
+
+    def form_valid(self,form) :
+        shipment = Shipment.objects.filter(tracking_number = self.kwargs['tracking_number'])
+        if not shipment.exists() : return HttpResponse("This shipment no longer exists")
+        form.save(commit = False)
+        form.instance.shipment = shipment.first()
+        form.save()
+        return form
+
+
+class UpdateStatusLog(LoginRequiredMixin,UserPassesTestMixin,View) : 
+    def test_func(self) :
+        return self.request.user.is_superuser
+
+    model = StatusLog
+
+ 
+    def post(self,request,*args,**kwargs) :
+        shipment = Shipment.objects.filter(tracking_number = self.kwargs['tracking_number'])
+        if not shipment.exists() : return HttpResponse("This shipment no longer exists")
+        shipment = shipment.first()
+
+        if kwargs['action'] == "update" :
+            error = shipment.update_status_log()
+            if error : return HttpResponse(error)
+
+        elif kwargs['action'] == "roll_back"  :
+            error = shipment.roll_back_status_log()  
+            if error : return HttpResponse(error)
+
+        url = reverse("shipment-detail",args=[self.kwargs['tracking_number']])
+        return HttpResponseRedirect(url)
+
+

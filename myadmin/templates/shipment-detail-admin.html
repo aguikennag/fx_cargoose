@@ -1,48 +1,66 @@
 {% extends 'admin-base.html' %}
 {% load static %}
 {% load humanize %}
-
+{% load crispy_forms_tags %}
 
 {% block content %}
 <div class="user-content">
-    <div class="user-panel" style="margin: -50px -50px 0px  -50px;">
-        <!--div class="col-12">
-            <div class="row">
-                <div class="col-6">
-                    <div class="tile-item tile-light">
-                        <div class="tile-bubbles"></div>
-                        <h6 class="tile-title">WALLET BALANCE</h6>
-                        <ul class="tile-info-list">
-                            <li><span>$1.646</span></li>
-                          
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="tile-item tile-light">
-                        <div class="tile-bubbles"></div>
-                        <h6 class="tile-title">PENDING DEPOSIT</h6>
-                        <ul class="tile-info-list">
-                            <li><span style="color:green">+$1.646</span></li>
-                          
-                        </ul>
-                        <h6 class="tile-title">PENDING WITHDRAWAL</h6>
-                        <ul class="tile-info-list">
-                            <li><span style="color:red">-$1.646</span></li>
-                          
-                        </ul>
-                    </div>
-                    
+    <div class="user-panel" style="margin: -90px -30px 0px  -30px;">
+     
+        {% include 'timeline.html' with ctx=ctx %}
 
-                </div>
+        <section class="section bg-white" style="margin-top: -80px;">
+            <div class="container">
+                <!-- Block @s -->
+                <div class="nk-block">
+                    <div class="row">
+                        <!--div class="col-md-4 col-lg-3 mb-4 mb-lg-0">
+                            <ul class="nav tab-nav tab-nav-vr tab-nav-bdr mr-lg-3">
+                                <li><a class="active" data-toggle="tab" href="#add-status-log"><em class="fas fa-caret-right"></em>Add Status Log</a></li>
+                                <li><a data-toggle="tab" href="#add-transit-log"><em class="fas fa-caret-right"></em>Add Transit Log</a></li>
+                               
+                            </ul>
+                        </div><!-- .col -->
+                        <div class="col-md-8 col-lg-9">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="add-status-log">
+                                    {% if ctx.shipment.is_in_transit %}
 
+                                    <form action="" method="POST" enctype="multipart/form-data" id="kycForm">
+                                        {% csrf_token %}
+                                       
+                                        {{ctx.transit_log_form|crispy}}
+                                        <center>
+                                            <button type="submit" class="btn btn-primary mb-3">Update Transit Log</button>
+                                        </center>
+                            
+                                    </form>
+                                    {% else %}
+                                    <form action="{% url 'update-status-log' ctx.shipment.tracking_number 'update' %}" method="POST" enctype="multipart/form-data" id="">
+                                        {% csrf_token %}
+                                      
+                                        <center>
+                                            <button type="submit" class="btn btn-primary mb-3">Update Status Log</button>
+                                        </center>
+                                    </form>
+                                    <form action="{% url 'update-status-log' ctx.shipment.tracking_number 'roll_back' %}" method="POST" enctype="multipart/form-data" id="">
+                                        {% csrf_token %}
+                                      
+                                        <center>
+                                            <button type="submit" class="btn btn-primary mb-3">Roll Back Status Log</button>
+                                        </center>
+                                    </form>
+                                    {% endif %}
+                                </div>
+                                
+                              
+                            </div>
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .block @e -->
             </div>
-          
-        </div><!-- .col -->
-        <h2 class="user-panel-title">Shipment  : <b>{{shipment.tracking_number}}</b></h2>
-        <div class="table-responsive">
-           
-        </div>
+        </section>
+
 
     </div><!-- .user-panel -->
 </div><!-- .user-content -->
