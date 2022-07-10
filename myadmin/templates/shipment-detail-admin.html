@@ -26,7 +26,7 @@
                                 <div class="tab-pane fade show active" id="add-status-log">
                                     {% if ctx.shipment.is_in_transit %}
 
-                                    <form action="" method="POST" enctype="multipart/form-data" id="kycForm">
+                                    <form action="{% url 'update-transit-log' ctx.shipment.tracking_number 'update' %}" method="POST" enctype="multipart/form-data" id="kycForm">
                                         {% csrf_token %}
                                        
                                         {{ctx.transit_log_form|crispy}}
@@ -35,10 +35,24 @@
                                         </center>
                             
                                     </form>
+                                    <form action="{% url 'update-transit-log' ctx.shipment.tracking_number 'roll_back' %}" method="POST" enctype="multipart/form-data" id="kycForm">
+                                        {% csrf_token %}
+                                       
+                                    
+                                        <center>
+                                            <button type="submit" class="btn btn-primary mb-3">Roll Back Transit Log</button>
+                                        </center>
+                            
+                                    </form>
                                     {% else %}
                                     <form action="{% url 'update-status-log' ctx.shipment.tracking_number 'update' %}" method="POST" enctype="multipart/form-data" id="">
                                         {% csrf_token %}
-                                      
+                                        <div class="field-item">
+                                            <div class="field-wrap">
+                                                <label>Choose a date or leave blank to use todays date.</label>
+                                                <input type="date" name="date" class="input-bordered" >
+                                            </div>
+                                        </div>
                                         <center>
                                             <button type="submit" class="btn btn-primary mb-3">Update Status Log</button>
                                         </center>

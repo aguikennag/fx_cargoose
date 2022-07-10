@@ -78,7 +78,7 @@
                         <td>${{shipment.shipment_fee}}</td>
                         <td>{{shipment.source_address}}, {{shipment.source_country}}</td>
                         <td>{{shipment.destination_address}}, {{shipment.destination_country}}</td>
-                        <td>{{shipment.shipment_status_log.status_verbose}} @ {{shipment.shipment_status_log.date_since}}</td>
+                        <td>{{shipment.shipment_status_log.status_verbose|default:"You are yet to update transit log"}} @ {{shipment.shipment_status_log.date_since}}</td>
                         <td><span>{{shipment.date}}</span></td>
                         <td><a href="{% url 'shipment-detail' shipment.tracking_number %}">View Shipment</a></td>
                        

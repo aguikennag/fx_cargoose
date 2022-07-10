@@ -65,7 +65,7 @@ class AddStatusLog(LoginRequiredMixin,UserPassesTestMixin,CreateView) :
 
 
 
-class AddTransitLog(LoginRequiredMixin,UserPassesTestMixin,CreateView) : 
+class UpdateTransitLog(LoginRequiredMixin,UserPassesTestMixin,View) : 
     
     def test_func(self) :
         return self.request.user.is_superuser
@@ -76,13 +76,29 @@ class AddTransitLog(LoginRequiredMixin,UserPassesTestMixin,CreateView) :
     def get_success_url(self) :
         return reverse("shipment-detail",args=[self.kwargs['tracking_number']])
 
-    def form_valid(self,form) :
+    def post(self,request,*args,**kwargs) :
         shipment = Shipment.objects.filter(tracking_number = self.kwargs['tracking_number'])
         if not shipment.exists() : return HttpResponse("This shipment no longer exists")
-        form.save(commit = False)
-        form.instance.shipment = shipment.first()
-        form.save()
-        return form
+        if kwargs['action'] == "update" :
+            form = self.form_class(request.POST)
+            if form.is_valid() :
+                form.save(commit = False)
+                form.instance.shipment = shipment.first()
+                form.save()
+            else :
+                print(form.errors.as_text())     
+          
+
+        elif kwargs['action'] == "roll_back" :
+            error = shipment.roll_back_transit_log()
+            if error :
+                return HttpResponse(error)
+
+
+        else :
+            return HttpResponse("invalid request")  
+
+        return HttpResponseRedirect(self.get_success_url())      
 
 
 class UpdateStatusLog(LoginRequiredMixin,UserPassesTestMixin,View) : 
@@ -96,9 +112,12 @@ class UpdateStatusLog(LoginRequiredMixin,UserPassesTestMixin,View) :
         shipment = Shipment.objects.filter(tracking_number = self.kwargs['tracking_number'])
         if not shipment.exists() : return HttpResponse("This shipment no longer exists")
         shipment = shipment.first()
+        
+        #just for testing, remove later
+        date = request.POST.get("date")
 
         if kwargs['action'] == "update" :
-            error = shipment.update_status_log()
+            error = shipment.update_status_log(date = date)
             if error : return HttpResponse(error)
 
         elif kwargs['action'] == "roll_back"  :

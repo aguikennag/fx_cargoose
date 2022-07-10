@@ -1,5 +1,6 @@
 from django.db import models
 from django.core.exceptions import ObjectDoesNotExist
+from django.utils import timezone
 import uuid
 import re
 
@@ -44,7 +45,7 @@ class Shipment(models.Model) :
     def save(self,*args,**kwargs) :
         super(Shipment,self).save(*args,**kwargs)
 
-    def update_status_log(self)   :
+    def update_status_log(self,date = None)   :
         statuses = [value for name,value in StatusLog.StatusChoices]
         current_status = self.last_status_log.status
         #update to next
@@ -52,7 +53,7 @@ class Shipment(models.Model) :
         _index = statuses.index(current_status) 
         if _index < len(statuses) - 1 :
             #anything above means its already in transit then we do nothing
-            StatusLog.objects.create(shipment = self,status = statuses[_index + 1])
+            StatusLog.objects.create(shipment = self,status = statuses[_index + 1],date = date)
         else : 
             return "You cannot update status log any further, shipment is already in {}".format(current_status)  #meaning error     
        
@@ -69,22 +70,27 @@ class Shipment(models.Model) :
             self.last_status_log.delete()
         else : 
             return "You cannot roll back status log any further, shipment is in {} status".format(current_status)  #meaning error  
- 
+    
+    def roll_back_transit_log(self) :
+
+        #delete transit last log
+        if self.last_transit_log :
+            self.last_transit_log.delete()
+
+        else : 
+            self.roll_back_status_log()
+    
+
     @property
     def is_in_transit(self) :
-        try : 
-            #if the shipment has a transit log then its in transit
-            transit_logs = self.transit_logs.all() 
-            if transit_logs.count() > 0 : return True   
-        except ObjectDoesNotExist :  pass
-
+        if self.last_status_log.status == "in transit" : return True
         return False
 
 
     @property
     def timeline_logs(self) :
-        status_logs = self.status_logs.all()
-        try : transit_logs = self.transit_logs.all()    
+        status_logs = self.status_logs.order_by("date")
+        try : transit_logs = self.transit_logs.order_by("date")  
         except ObjectDoesNotExist : transit_logs = None
        
         #combine
@@ -110,8 +116,10 @@ class Shipment(models.Model) :
 
     @property
     def last_transit_log(self) :
-        try : return self.transit_logs.all()[0]
-        except ObjectDoesNotExist : return    
+        try : 
+            return self.transit_logs.all()[0]
+        except (ObjectDoesNotExist,IndexError) : 
+            return    
 
     @property
     def shipment_status_log(self)  :
@@ -125,12 +133,17 @@ class Shipment(models.Model) :
 
         else :
             #then get transit data
-            log = {
-            "location" : "{} station".format(self.last_transit_log.station.name),
-            "status" : self.last_transit_log.status,
-            "date_since" : self.last_transit_log.date,
-            "status_verbose" : self.last_transit_log.status_verbose,
-        }
+            current_transit_log = self.last_transit_log
+            if current_transit_log :
+                log = {
+                "location" : "{} station".format(current_transit_log.station),
+                "status" : self.last_transit_log.status,
+                "date_since" : self.last_transit_log.date,
+                "status_verbose" : self.last_transit_log.status_verbose,
+                }
+
+            else :
+                log = {}    
 
         return log
 
@@ -151,7 +164,7 @@ class StatusLog(models.Model) :
 
     shipment = models.ForeignKey(Shipment,related_name = "status_logs",on_delete = models.CASCADE)
     status  = models.CharField(max_length = 10,choices = StatusChoices)
-    date = models.DateTimeField(auto_now_add=True)
+    date = models.DateTimeField() #editable
 
     class Meta() :
         ordering = ['-date']
@@ -161,7 +174,8 @@ class StatusLog(models.Model) :
             #make sure a shipment log has been created for this shipment
             #if not raise an Object Does not Exists exception and prevent save
             _ = self.shipment.transit_logs
-            
+
+        if not self.date : self.date = timezone.now()    
         super(StatusLog,self).save(*args,**kwargs) 
     
     @property
@@ -189,18 +203,23 @@ class TransitLog(models.Model) :
     )
     shipment = models.ForeignKey(Shipment,related_name = 'transit_logs',on_delete = models.CASCADE)
     status  = models.CharField(max_length = 10,choices = StatusChoices)
-    station = models.ForeignKey(Station,on_delete = models.CASCADE,related_name ="transit_logs")
-    date = models.DateTimeField(auto_now_add=True)
+    #station = models.ForeignKey(Station,on_delete = models.CASCADE,related_name ="transit_logs")
+    station = models.CharField(max_length=30)
+    date = models.DateTimeField()  #editable
+
+    def save(self,*args,**kwargs) :
+        if not self.date : self.date = timezone.now()  
+        super(TransitLog,self).save(*args,**kwargs)
 
     @property
     def status_verbose(self) :
         if self.status == "arrived" :
-            return "Package has arrived at {} terminal, awaiting processing".format(self.station.name)
+            return "Package has arrived at {} terminal, awaiting processing".format(self.station)
 
         elif self.status == "processing" :
-            return "Package is being processed at {} terminal".formst(self.station.name)  
+            return "Package is being processed at {} terminal".format(self.station)  
 
-        else : return "Package has been dispatched to the next terminal"      
+        else : return "Package has left {}, and now been dispatched to the next terminal".format(self.station)    
 
 
     class Meta() :

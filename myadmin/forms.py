@@ -24,12 +24,15 @@ class StatusLogForm(forms.ModelForm) :
         ]
 
 
+
 class TransitLogForm(forms.ModelForm) :
 
     class Meta() :
         model = TransitLog
         fields = [
+            
+            'station',
             'status',
-            'station'
+            'date'
         ]
 
