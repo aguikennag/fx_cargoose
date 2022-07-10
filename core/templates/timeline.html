@@ -1,10 +1,123 @@
 {% extends 'core-base.html' %}
 
 {% block content %}
-<main class="nk-pages">
+<main class="nk-pages pt-5">
+    <h4 style="text-align: center;"> SHIPMENT TRACKING   : #{{ctx.shipment.tracking_number}} </h4>
+    <div class="container" style="margin-top: 20px;">
+
+        <h3 style="color:black" class="title title title-md">Shipment  Data</h3>
+
+        <table class="table table-bordered">
+            <tbody>
+                <tr>
+                    <td class="table-head">Package Name</td>
+                    <td class="table-des">{{ctx.shipment.package_name}}</td>
+                </tr>
+                <tr>
+                    <td class="table-head">Weight</td>
+                    <td class="table-des">{{ctx.shipment.weight}} Kg</td>
+                </tr>
+                <tr>
+                    <td class="table-head">Origin</td>
+                    <td class="table-des">{{ctx.shipment.source_address}}, {{ctx.shipment.source_country}}</td>
+                </tr>
+                <tr>
+                    <td class="table-head">Destination</td>
+                    <td class="table-des">{{ctx.shipment.destination_address}}, {{ctx.shipment.destination_country}}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table-head">Registered On</td>
+                    <td class="table-des">{{ctx.shipment.registration_date}}</td>
+                </tr>
+                <tr>
+                    <td class="table-head">Shipping Fee</td>
+                    <td class="table-des">${{ctx.shipment.shipment_fee}}</td>
+                </tr>
+                <tr>
+                    <td class="table-head">Current Status</td>
+                    <td class="table-des">{{ctx.shipment.last_status_log.status}}</td>
+                </tr>
+                <tr>
+                    <td class="table-head">Payment Status</td>
+                    <td class="table-des">{{ctx.shipment.payment_status}}</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <div class="row mt-4">
+            <div class="col-lg-6 col-12">
+                <h3 class="title title title-md" style="color:black">Sender Data</h3>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="table-head">Name</td>
+                            <td class="table-des">{{ctx.shipment.sender_name}}</td>
+                        </tr>
+                        <tr>
+                            <td class="table-head">Phone Number</td>
+                            <td class="table-des">{{ctx.shipment.sender_phone_number}}</td>
+                        </tr>
+                        <tr>
+                            <td class="table-head">Email</td>
+                            <td class="table-des">{{ctx.shipment.sender_email}}</td>
+                        </tr>
+                        <tr>
+                            <td class="table-head">Address</td>
+                            <td class="table-des">{{ctx.shipment.sender_address}}</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+
+
+
+            </div>
+            <div class="col-lg-6 col-12">
+                <h3 style="color:black" class="title title title-md">Receiver Data</h3>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="table-head">Name</td>
+                            <td class="table-des">{{ctx.shipment.receiver_name}}</td>
+                        </tr>
+                        <tr>
+                            <td class="table-head">Phone Number</td>
+                            <td class="table-des">{{ctx.shipment.receiver_phone_number}}</td>
+                        </tr>
+                        <tr>
+                            <td class="table-head">Email</td>
+                            <td class="table-des">{{ctx.shipment.receiver_email}}</td>
+                        </tr>
+                        <tr>
+                            <td class="table-head">Address</td>
+                            <td class="table-des">{{ctx.shipment.receiver_address}}</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+              
+            </div>
+           
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
     <div class="section section-roadmap " id="roadmap">
-        <h5>Shipment Timeline for : #{{ctx.shipment.tracking_number}}</h5>
-        <div class="container pt-4">
+
+        <h3 style="color:black" class="title title title-md">Shipment Transit Log</h3>
+        <div class="container ">
             <!-- Block @s -->
             <div class="nk-block nk-block-roadmap">
                 <div class="row justify-content-center">

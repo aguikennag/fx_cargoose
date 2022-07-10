@@ -40,7 +40,17 @@ class Shipment(models.Model) :
     sender_phone_number = models.CharField(max_length = 20)
     sender_email = models.EmailField()
 
+    #receiver info
+    receiver_name = models.CharField(max_length = 40)
+    receiver_address = models.CharField(max_length = 200)
+    receiver_phone_number = models.CharField(max_length = 20)
+    receiver_email = models.EmailField()
+
+
     date = models.DateTimeField(auto_now_add = True)
+
+    def __str__(self) :
+        return self.tracking_number
 
     def save(self,*args,**kwargs) :
         super(Shipment,self).save(*args,**kwargs)
@@ -79,6 +89,15 @@ class Shipment(models.Model) :
 
         else : 
             self.roll_back_status_log()
+
+    @property
+    def payment_status(self) :
+        if self.is_paid : return "PAID"   
+        else : return "NOT PAID"        
+
+    @property
+    def registration_date(self) :
+        return self.status_logs.filter(status = "registered").first().date        
     
 
     @property
