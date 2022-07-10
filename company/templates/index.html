@@ -107,7 +107,8 @@
                     </div>
                     <h2>We make moving packages very easy</h2>
                     <p>
-                        <b>{{site_name}}</b> is dedicated to ensure moving your packages across countries is as easy as making coffee.
+                        <b>{{site_name}}</b> is dedicated to ensure moving your packages across countries is as easy as
+                        making coffee.
                     </p>
                     <span>Register your delivery, and select if you want us to come pick it up.</span>
                     <span>Make payment</span>
@@ -135,17 +136,18 @@
                     <h3>Enter Your Tracking number and Track Your Package</h3>
                     <div class="tracking-form">
                         <div class="row">
-                        <form method="GET" action="{% url 'track-shipment' %}" >
-                            <div class="col-lg-4 col-md-4 col-sm-12">
-                             
-                                    <input name="tracking_number" type="text" class="form-control" placeholder="Tracking Number">
-                               
-                            </div>
+                            <form method="GET" action="{% url 'track-shipment' %}">
+                                <div class="col-lg-4 col-md-4 col-sm-12">
 
-                            <div class="col-lg-3 col-md-4 col-sm-6">
-                                <button type="submit">Track Your Package</button>
-                            </div>
-                        </form>
+                                    <input name="tracking_number" type="text" class="form-control"
+                                        placeholder="Tracking Number">
+
+                                </div>
+
+                                <div class="col-lg-3 col-md-4 col-sm-6">
+                                    <button type="submit">Track Your Package</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -159,7 +161,7 @@
 <div class="features-area features-style-2">
     <div class="container">
         <div class="section-title text-center">
-           
+
 
             <span>We Provide the Best</span>
             <h2> We are a First-Class Shipping company</h2>
@@ -175,7 +177,8 @@
                             <div class="features-text">
                                 <h3>Customer Service</h3>
                                 <p>
-                                    Our live customer support agents are always available to attend to your questions, enquiry and complaints.
+                                    Our live customer support agents are always available to attend to your questions,
+                                    enquiry and complaints.
                                 </p>
                             </div>
                         </div>
@@ -224,7 +227,8 @@
                             </div-->
                             <div class="features-text">
                                 <h3>Parcel Safety</h3>
-                                <p>We care about your parcels more than you do. Their safety is always our top priority.</p>
+                                <p>We care about your parcels more than you do. Their safety is always our top priority.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -249,10 +253,11 @@
             </div>
             <div class="col-lg-5 col-md-6 col-sm-12">
                 <div class="counter-grids">
-                   
+
                     <div class="grid">
                         <div>
-                            <h2><span class="odometer" data-count="{{package_delivered}}">{{package_delivered}</span></h2>
+                            <h2><span class="odometer" data-count="{{package_delivered}}">{{package_delivered}</span>
+                            </h2>
                         </div>
                         <p>Packages Delivered</p>
                     </div>
@@ -270,56 +275,143 @@
 <!-- counter-area end -->
 
 
-<!-- section-section start ->
-<div class="section-area section-style-2 mt-5">
+<!-- pice-area start -->
+<div class="pricing-area">
     <div class="container">
+        <div class="section-title text-center">
+            <span>We have the best pricing plan</span>
+            <h2>Our Pricing </h2>
+        </div>
         <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12 col-d">
-                <div class="section-item-2">
-                    <div class="section-icon">
-                        <i class="fi flaticon-ship"></i>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-4 col-l2 col-md-6 col-sm-12">
+                        <div class="price-item">
+                            <div class="pricing-header">
+                                <h3>Small</h3>
+                                <span>Per Kg/Mile</span>
+                            </div>
+                            <div class="pricing-table">
+                                <div class="price-sub-header">
+                                    <h4>$1200</h4>
+                                </div>
+                                <ul>
+                                    <li>Less than 50kg</li>
+
+                                </ul>
+                                <div class="pricing-footer">
+                                    <!--div class="btns">
+                                            <div class="btn-style btn-style-4"><a href="#">Order Now</a></div>
+                                        </div-->
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="section-content">
-                        <p><a href="ocean.html">Ocean Freight</a></p>
-                        <span>There are many variations of passages of Lorem Ipsum</span>
+
+                    <div class="col-lg-4 col-l2 col-md-6 col-sm-12">
+                        <div class="mt-5 d-block d-md-none"></div>
+                        <div class="price-item">
+                            <div class="pricing-header">
+                                <h3>Medium</h3>
+                                <span>Per Kg/Mile</span>
+                            </div>
+                            <div class="pricing-table">
+                                <div class="price-sub-header">
+                                    <h4>$1000</h4>
+                                </div>
+                                <ul>
+                                    <li>More than 50kg </li>
+                                    <li>Less than 100kg </li>
+
+                                </ul>
+                                <div class="pricing-footer">
+                                    <!--div class="btns">
+                                            <div class="btn-style btn-style-4"><a href="#">Order Now</a></div>
+                                        </div-->
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 col-d">
-                <div class="section-item-2">
-                    <div class="section-icon">
-                        <i class="fi flaticon-truck"></i>
-                    </div>
-                    <div class="section-content">
-                        <p> <a href="road.html">Road Freight</a></p>
-                        <span>There are many variations of passages of Lorem Ipsum</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 col-d">
-                <div class="section-item-2">
-                    <div class="section-icon">
-                        <i class="fi flaticon-plane"></i>
-                    </div>
-                    <div class="section-content">
-                        <p> <a href="Freight.html">Air Freight</a></p>
-                        <span>There are many variations of passages of Lorem Ipsum</span>
+                    <div class="col-lg-4 col-l2 col-md-6 col-sm-12">
+                        <div class="mt-5 d-block d-md-none"></div>
+                        <div class="price-item">
+                            <div class="pricing-header">
+                                <h3>Large</h3>
+                                <span>Per Kg/Mile</span>
+                            </div>
+                            <div class="pricing-table">
+                                <div class="price-sub-header">
+                                    <h4>$800</h4>
+                                </div>
+                                <ul>
+                                    <li>More than 100kg </li>
+
+                                </ul>
+                                <div class="pricing-footer">
+                                    <!--div class="btns">
+                                            <div class="btn-style btn-style-4"><a href="#">Order Now</a></div>
+                                        </div-->
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!--section-section end -->
+<!-- pice-area end -->
+<!-- testimonial-area start -->
+<div class="testimonial-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="testimonial-active owl-carousel">
+                    <div class="testimonial-wrap">
+                        <div class="testimonial-img">
+                            <img src="{% static 'main/images/testimonial/2.jpg' %}" alt="">
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <p>GTG always gets the job done, will always use their service.</p>
 
+                                <h4>Manela Watson</h4>
+                                <!--span>Derector of ATV</span-->
+                            </div>
+                        </div>
+                        <div class="test-c d-none d-lg-block"></div>
+                        <div class="test-b d-none d-lg-block"></div>
+                    </div>
+                    <div class="testimonial-wrap">
+                        <div class="testimonial-img">
+                            <img src="{% static 'main/images/testimonial/1.jpg' %}" alt="">
+                        </div>
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <p> Very reliable and easy to monitor</p>
+                                <h4>James preacher</h4>
 
-<!-- start track-section -->
+                            </div>
+                        </div>
+                        <div class="test-c d-none d-lg-block"></div>
+                        <div class="test-b d-none d-lg-block"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- testimonial-area end -->
+
+<!-- news letter -->
 <section class="newsletter-section newsletter-section-2">
     <div class="container">
         <div class="row">
             <div class="col-lg-4">
                 <h2>Subscribe To Our Newsletter</h2>
-                <p>Keep in touch with our offers, promos and newsletters. Enter your email adrress.<p>
+                <p>Keep in touch with our offers, promos and newsletters. Enter your email adrress.
+                <p>
             </div>
             <div class="col-lg-8">
                 <div class="newsletter">
@@ -347,6 +439,7 @@
     </div>
     <!-- end container -->
 </section>
-<!-- end track-section -->
+<!-- end news letter -->
+
 
 {% endblock %}
