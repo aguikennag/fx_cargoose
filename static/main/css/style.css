@@ -144,7 +144,7 @@ a:focus {
   display: none;
   position: fixed;
   z-index: 999;
-  right: 15px;
+  left: 15px;
   bottom: 15px;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
