@@ -66,10 +66,10 @@ class Register(CreateView) :
 
 class LoginRedirect(LoginRequiredMixin,RedirectView) :
     def get(self,request,*args,**kwargs) :
-        if request.user.is_admin :
-            return HttpResponseRedirect((reverse('admin-dashboard')))
+        if request.user.is_superuser :
+            return HttpResponseRedirect((reverse('myadmin-index')))
         else :
-            return HttpResponseRedirect((reverse('dashboard'))) 
+            return HttpResponseRedirect((reverse('index'))) 
 
 
 
