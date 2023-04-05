@@ -28,6 +28,7 @@ class ShipmentDetail(View) :
             return "shipment-detail-admin.html"
         return "shipment-detail.html"    
 
+
     def get(self,request,*args,**kwargs) :
         shipment = self.model.objects.filter(tracking_number = kwargs['tracking_number'])
         

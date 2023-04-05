@@ -1,135 +1,33 @@
-
+{% extends 'base.html' %}
 {% load static %}
 {% load crispy_forms_tags %}
-<!DOCTYPE html>
-<html lang="en">
 
 
-<!-- index16:47  -->
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-<head>
-    <!-- Meta Tags -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="{% static 'main/images/icon.png' %}">
-    <!-- Page Title -->
-    <title> Shipter–Transport and Logistics HTML5 Template </title>
-    <!-- Icon fonts -->
-    <link href="{% static 'main/css/font-awesome.min.css' %}" rel="stylesheet">
-    <link href="{% static 'main/css/flaticon.css' %}" rel="stylesheet">
-    <!-- Bootstrap core CSS -->
-    <link href="{% static 'main/css/bootstrap.min.css' %}" rel="stylesheet">
-    <!-- Plugins for this template -->
-    <link href="{% static 'main/css/animate.css' %}" rel="stylesheet">
-    <link href="{% static 'main/css/owl.carousel.css' %}" rel="stylesheet">
-    <link href="{% static 'main/css/odometer-theme-default.css' %}" rel="stylesheet">
-    <link href="{% static 'main/css/slick.css' %}" rel="stylesheet">
-    <link href="{% static 'main/css/slick-theme.css' %}" rel="stylesheet">
-    <link href="{% static 'main/css/slicknav.min.css' %}" rel="stylesheet">
-    <link href="{% static 'main/css/jquery.fancybox.css' %}" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="{% static 'main/css/style.css' %}" rel="stylesheet">
-    <link href="{% static 'main/css/responsive.css' %}" rel="stylesheet">
-    <link href="{% static 'main/css//materialdesignicons.min.css' %}" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="{% static 'https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js' %}""></script>
-    <script src="{% static 'https://oss.maxcdn.com/respond/1.4.2/respond.min.js' %}""></script>
-    <![endif]-->
 
-    <style>
-        .main-icons {
-            font-size: 40px;
-            color:rgb(100, 99, 99)
-        }
-    </style>
-</head>
-
-<body>
-    <!-- start page-loader -->
-    <div class="page-loader">
-        <div class="page-loader-inner">
-            <div class="inner"></div>
+{% block content %}
+<div class="container-xxl py-5" id="tracking">
+    <div class="container py-0">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-secondary text-uppercase mb-3">Create An Account</h6>
+                <h1 class="mb-3">Register</h1>
+                <p class="mb-5">
+                    Already have an account ? <a href="{% url 'login' %}">Login</a>
+                </p>
+           
+            </div>
+            <div class="col-lg-7">
+                <div class="bg-light text-center p-5 wow fadeIn" data-wow-delay="0.5s">
+                    <form method="POST" action="">
+                        {% csrf_token %}
+                        {{form|crispy}}
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3" type="submit">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- end page-loader -->
-   <!-- header-area start -->
-    <header>
-        <div class="header-top">
-            <div class="container">
-                <div class="row">
-                    
-                    <div class="col-md-6 col-sm-12 col-12 col-lg-6" style="">
-                      
-                        <div class="row">
-                            <div style="text-align: center;" class="col-lg-12 col-md-12">
-                                <a style="font-size: 20px ;color:white" href="{% url 'index' %}">{{site_name}}</a></li>
-                                   
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="header-area"  id="sticky-header">
-          
-        </div>
-    </header>
-    <!-- header-area end -->
-
-
-	 <section class="newsletter-section newsletter-section-2 mt-0 py-4">
-        <div class="container">
-            
-                <div style="text-align: center;">
-					<h4>Move around cheaper</h4>
-					<p>Already have an account ?, <a href="{% url 'login' %}">Login</a></p>
-				</div>
-				<div class="row">
-                <div class="col-lg-8">
-                    <div class="newsletter">
-						<form action="" method="POST">
-							{% csrf_token %}
-							<div class="newsletter-form">
-								<div class="row">
-
-									
-									<div class="col-lg-12 col-md-12 col-sm-12">
-										{{form|crispy}}
-									</div>
-									<div class=" col-12"  style="text-align:center">
-										<div class="btn-style mb-3">
-											<button type="submit">Register</button>
-										</div>
-										By clicking "Register", i have read and agreed to {{site_name}} <a href="#">Privacy policy</a>
-									</div>
-							
-								</div>
-							</div>
-
-					    </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    </section>
-    <!-- end track-section -->
-
- 
-    <!-- All JavaScript files
-================================================== -->
-    <script src="{% static 'main/js/jquery.min.js' %}""></script>
-    <script src="{% static 'main/js/bootstrap.min.js' %}""></script>
-    <!-- Plugins for this template -->
-    <script src="{% static 'main/js/jquery-plugin-collection.js' %}""></script>
-    <script src="{% static 'main/js/jquery.slicknav.min.js' %}""></script>
-    <!-- Custom script for this template -->
-    <script src="{% static 'main/js/script.js' %}""></script>
-</body>
-
-
-<!-- index16:47  -->
-</html>
+</div>
+{% endblock %}

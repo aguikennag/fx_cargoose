@@ -2,357 +2,52 @@
 {% load static %}
 
 {% block content %}
-<section class="hero hero-slider-wrapper hero-style-1 hero-style-2">
-    <div class="hero-slider">
-        <div class="slide">
-            <img src="{% static 'main/images/slider/1.jpg' %}" alt class="slider-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-lg-9 slide-caption">
-                        <h2><span>The most efficient way to move your packages</span> <span>Around The world</span>
-                        </h2>
-                        <!--div class="btns">
-                            <div class="btn-style"><a href="#">Learn More</a></div>
-                        </div-->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="{% static 'main/images/slider/2.jpg' %}" alt class="slider-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-lg-9 slide-caption">
-                        <h2><span>From one doorstep to another,</span> <span>globally</span>
-                        </h2>
-                        <!--div class="btns">
-                            <div class="btn-style"><a href="#">Register Your delivery</a></div>
-                        </div-->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--div class="slide">
-                <img src="{% static 'main/images/slider/3.jpg' %}" alt class="slider-bg">
+
+
+<!-- Carousel Start -->
+<div class="container-fluid p-0 pb-0">
+    <div class="owl-carousel header-carousel position-relative mb-5">
+        <div class="owl-carousel-item position-relative">
+            <img class="img-fluid" src="{% static 'main/img/carousel-1.jpg' %}" alt="">
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                style="background: rgba(6, 3, 21, .5);">
                 <div class="container">
-                    <div class="row">
-                        <div class="col col-lg-9 slide-caption">
-                            <h2><span>We Provide the Best Solution</span> <span>For Your Transport.</span></h2>
-                            <div class="btns">
-                                <div class="btn-style"><a href="#">Contact us now</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div-->
-    </div>
-</section>
-<!-- end of hero slider -->
-
-<!-- section-section start ->
-<div class="section-area">
-    <div class="container">
-        <div class="row">
-            <a href="#">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-6 col-d">
-                    <div class="section-item">
-                        <div class="section-icon">
-                            <i style="color:inherit" class="fi flaticon-truck"></i>
-                        </div>
-                        <div class="section-content">
-                            <p><a href="#">Inter State</a></p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-6 col-d">
-                <div class="section-item">
-                    <div class="section-icon">
-                        <i class="fi flaticon-box"></i>
-                    </div>
-                    <div class="section-content">
-                        <p><a href="#">Logistics</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-6 col-d">
-                <div class="section-item">
-                    <div class="section-icon">
-                        <i class="fi flaticon-delivery"></i>
-                    </div>
-                    <div class="section-content">
-                        <p><a href="#">Get A Ride</a></p>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-</div>
-<!--section-section end -->
-<!-- .about-area start -->
-<div class="about-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="about-img">
-                    <img src="{% static 'main/images/about/about.svg' %}" alt="">
-                </div>
-            </div>
-            <div class="col-lg-6 sec-p">
-                <div class="about-content">
-                    <div class="about-icon">
-                        <i class="fi flaticon-travel"></i>
-                    </div>
-                    <h2>We make moving packages very easy</h2>
-                    <p>
-                        <b>{{site_name}}</b> is dedicated to ensure moving your packages across countries is as easy as
-                        making coffee.
-                    </p>
-                    <span>Register your delivery, and select if you want us to come pick it up.</span>
-                    <span>Make payment</span>
-                    <span>Track your shipment </span>
-                </div>
-                <!--div class="signature-section">
-                    <div class="si-text">
-                        <p>Ketty Raigott</p>
-                        <span>Chairman & Chief Executive Officer</span>
-                    </div>
-                    <img src="{% static 'main/images/about/1.png' %}" alt="">
-                </div-->
-            </div>
-        </div>
-    </div>
-</div>
-<!-- about-area end -->
-
-<!-- start track-section -->
-<section class="track-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-9">
-                <div class="track">
-                    <h3>Enter Your Tracking number and Track Your Package</h3>
-                    <div class="tracking-form">
-                        <div class="row">
-                            <form method="GET" action="{% url 'track-shipment' %}">
-                                <div class="col-lg-4 col-md-4 col-sm-12">
-
-                                    <input name="tracking_number" type="text" class="form-control"
-                                        placeholder="Tracking Number">
-
-                                </div>
-
-                                <div class="col-lg-3 col-md-4 col-sm-6">
-                                    <button type="submit">Track Your Package</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end container -->
-</section>
-<!-- end track-section -->
-<!-- feature-area start -->
-<div class="features-area features-style-2">
-    <div class="container">
-        <div class="section-title text-center">
-
-
-            <span>We Provide the Best</span>
-            <h2> We are a First-Class Shipping company</h2>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <div class="features-item features-item-2">
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-                        <div class="feature-wrap">
-                            <!--div class="features-icon features-icon2">
-                                <i class="fi flaticon-plane"></i>
-                            </div-->
-                            <div class="features-text">
-                                <h3>Customer Service</h3>
-                                <p>
-                                    Our live customer support agents are always available to attend to your questions,
-                                    enquiry and complaints.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-                        <div class="feature-wrap">
-                            <!--div class="features-icon feature-icon3">
-                                <i class="fi flaticon-truck"></i>
-                            </div-->
-                            <div class="features-text">
-                                <h3>Competitive Rates</h3>
-                                <p>
-                                    We offer the best service delivery at the best price you can get.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="features-item">
-                    <div class="feature-img">
-                        <img src="{% static 'main/images/features/1.png' %}" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="features-item">
-                    <div class="col-lg-12 col-md-6 col-sm-12">
-                        <div class="feature-wrap">
-                            <!--div class="features-icon">
-                                <i class="fi flaticon-ship"></i>
-                            </div-->
-                            <div class="features-text">
-                                <h3>Timely Delivery</h3>
-                                <p>
-                                    Our delivery time is unbeatable, you can always trust us to deliver on time
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-6 col-sm-12">
-                        <div class="feature-wrap">
-                            <!--div class="features-icon">
-                                <i class="fi flaticon-truck-1"></i>
-                            </div-->
-                            <div class="features-text">
-                                <h3>Parcel Safety</h3>
-                                <p>We care about your parcels more than you do. Their safety is always our top priority.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- feature-area start -->
-<!-- counter-area start -->
-<div class="counter-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-7 col-md-6 col-sm-12">
-                <div class="counter-content">
-                    <h2>it always gets better with {{site_name}}</h2>
-                    <p>Out track record always speaks for us, and we keep getting better as we serve you.</p>
-                    <!--div class="btns">
-                        <div class="btn-style btn-style-3"><a href="#">Learn More About Us...</a></div>
-                    </div-->
-                </div>
-            </div>
-            <div class="col-lg-5 col-md-6 col-sm-12">
-                <div class="counter-grids">
-
-                    <div class="grid">
-                        <div>
-                            <h2><span class="odometer" data-count="{{package_delivered}}">{{package_delivered}}</span>
+                    <div class="row justify-content-start">
+                        <div class="col-10 col-lg-8">
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Transport & Logistics
+                                Solution</h5>
+                            <h2 class="display-3 text-white animated slideInDown mb-4">
+                                The Most Efficient Way To Move Your<span class="text-primary"> Packages</span> Around
+                                The World
                             </h2>
+                            <p class="fs-5 fw-medium text-white mb-4 pb-2">Your one stop for everything logistics.</p>
+                            <a href="#tracking" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Track
+                                Shipment</a>
+                            <a href="#pricing" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">See
+                                Pricing</a>
                         </div>
-                        <p>Packages Delivered</p>
-                    </div>
-                    <div class="grid">
-                        <div>
-                            <h2><span class="odometer" data-count="{{users_served}}">{{users_served}} </span></h2>
-                        </div>
-                        <p>Users Served</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- counter-area end -->
-
-
-<!-- pice-area start -->
-<div class="pricing-area">
-    <div class="container">
-        <div class="section-title text-center">
-            <span>We have the best pricing plan</span>
-            <h2>Our Pricing </h2>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="row">
-                    <div class="col-lg-4 col-l2 col-md-6 col-sm-12">
-                        <div class="price-item">
-                            <div class="pricing-header">
-                                <h3>Small</h3>
-                                <span>Per Kg/Mile</span>
-                            </div>
-                            <div class="pricing-table">
-                                <div class="price-sub-header">
-                                    <h4>$1200</h4>
-                                </div>
-                                <ul>
-                                    <li>Less than 50kg</li>
-
-                                </ul>
-                                <div class="pricing-footer">
-                                    <!--div class="btns">
-                                            <div class="btn-style btn-style-4"><a href="#">Order Now</a></div>
-                                        </div-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-l2 col-md-6 col-sm-12">
-                        <div class="mt-5 d-block d-md-none"></div>
-                        <div class="price-item">
-                            <div class="pricing-header">
-                                <h3>Medium</h3>
-                                <span>Per Kg/Mile</span>
-                            </div>
-                            <div class="pricing-table">
-                                <div class="price-sub-header">
-                                    <h4>$1000</h4>
-                                </div>
-                                <ul>
-                                    <li>More than 50kg </li>
-                                    <li>Less than 100kg </li>
-
-                                </ul>
-                                <div class="pricing-footer">
-                                    <!--div class="btns">
-                                            <div class="btn-style btn-style-4"><a href="#">Order Now</a></div>
-                                        </div-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-l2 col-md-6 col-sm-12">
-                        <div class="mt-5 d-block d-md-none"></div>
-                        <div class="price-item">
-                            <div class="pricing-header">
-                                <h3>Large</h3>
-                                <span>Per Kg/Mile</span>
-                            </div>
-                            <div class="pricing-table">
-                                <div class="price-sub-header">
-                                    <h4>$800</h4>
-                                </div>
-                                <ul>
-                                    <li>More than 100kg </li>
-
-                                </ul>
-                                <div class="pricing-footer">
-                                    <!--div class="btns">
-                                            <div class="btn-style btn-style-4"><a href="#">Order Now</a></div>
-                                        </div-->
-                                </div>
-                            </div>
+        <div class="owl-carousel-item position-relative">
+            <img class="img-fluid" src="{% static 'main/img/carousel-2.jpg' %}" alt="">
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                style="background: rgba(6, 3, 21, .5);">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-10 col-lg-8">
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">
+                                Efficiency at it's peak
+                            </h5>
+                            <h1 class="display-3 text-white animated slideInDown mb-4">From One <span
+                                    class="text-primary">Doorstep</span> To Another, Globally.</h1>
+                            <p class="fs-5 fw-medium text-white mb-4 pb-2">
+                                Your neighbours prefers our service to anyother, you should to.
+                            </p>
+                            <a href="#pricing" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Track
+                                Shipment</a>
+                            <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">See Pricing</a>
                         </div>
                     </div>
                 </div>
@@ -360,86 +55,427 @@
         </div>
     </div>
 </div>
-<!-- pice-area end -->
-<!-- testimonial-area start -->
-<div class="testimonial-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3">
-                <div class="testimonial-active owl-carousel">
-                    <div class="testimonial-wrap">
-                        <div class="testimonial-img">
-                            <img src="{% static 'main/images/testimonial/2.jpg' %}" alt="">
-                        </div>
-                        <div class="testimonial-item">
-                            <div class="testimonial-content">
-                                <p>GTG always gets the job done, will always use their service.</p>
+<!-- Carousel End -->
 
-                                <h4>Manela Watson</h4>
-                                <!--span>Derector of ATV</span-->
+<!-- Tracking Start -->
+<div class="container-xxl py-0" id="tracking">
+    <div class="container py-0">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-secondary text-uppercase mb-3">Real Time Tracking</h6>
+                <h1 class="mb-3">Track Your Package</h1>
+                <p class="mb-5">
+                    Track Your Shipment In Real Time
+                </p>
+                <div class="d-flex align-items-center">
+                    <i class="fa fa-headphones fa-2x flex-shrink-0 bg-primary p-3 text-white"></i>
+                    
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="bg-light text-center p-5 wow fadeIn" data-wow-delay="0.5s">
+                    <form method="GET" action="{% url 'track-shipment' %}">
+                        <div class="row g-3">
+
+                            <div class="col-12 mb-5">
+                                <input name="tracking_number" type="text" class="form-control border-0"
+                                    placeholder="Enter Tracking Number" style="height: 55px;">
                             </div>
                         </div>
-                        <div class="test-c d-none d-lg-block"></div>
-                        <div class="test-b d-none d-lg-block"></div>
-                    </div>
-                    <div class="testimonial-wrap">
-                        <div class="testimonial-img">
-                            <img src="{% static 'main/images/testimonial/1.jpg' %}" alt="">
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
                         </div>
-                        <div class="testimonial-item">
-                            <div class="testimonial-content">
-                                <p> Very reliable and easy to monitor</p>
-                                <h4>James preacher</h4>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Tracking End -->
 
+<!-- About Start -->
+<div class="container-fluid overflow-hidden py-5 px-lg-0" id="about">
+    <div class="container about py-5 px-lg-0">
+        <div class="row g-5 mx-lg-0">
+            <div class="col-lg-6 ps-lg-0 wow fadeInLeft" data-wow-delay="0.1s" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute img-fluid w-100 h-100" src="{% static 'main/img/about.jpg' %}"
+                        style="object-fit: cover;" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 about-text wow fadeInUp" data-wow-delay="0.3s">
+                <h6 class="text-secondary text-uppercase mb-3">About Us</h6>
+                <h1 class="mb-5">We make moving packages very easy</h1>
+                <p class="mb-5">
+                    {{site_name}} is a reliable logistics company dedicated to delivering your goods safely and
+                    efficiently. With years of experience and a commitment to customer satisfaction, we offer a wide
+                    range of transportation services tailored to meet your unique needs. Trust us to handle your cargo
+                    with care and precision every step of the way.
+                </p>
+                <div class="row g-4 mb-5">
+                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                        <i class="fa fa-globe fa-3x text-primary mb-3"></i>
+                        <h5>Global Coverage</h5>
+                        <p class="m-0">Efficiently transport your goods worldwide with our global freight forwarding
+                            services.</p>
+                    </div>
+                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                        <i class="fa fa-shipping-fast fa-3x text-primary mb-3"></i>
+                        <h5>On Time Delivery</h5>
+                        <p class="m-0">We don't just ensure timely delivery of your goods, we always it is also
+                            convenient for you.</p>
+                    </div>
+                </div>
+                <a hidden href="" class="btn btn-primary py-3 px-5">Explore More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+
+<!-- Fact Start -->
+<div class="container-xxl py-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-secondary text-uppercase mb-3">Know us better</h6>
+                <h1 class="mb-5">We Make Moving Packages Very Easy</h1>
+                <p class="mb-2">GTG Cargoose is dedicated to ensure moving your packages across countries is as easy as
+                    making coffee. Our track record always speaks for us, and we keep getting better as we serve you.
+                </p>
+                <ul class="mb-5">
+                    <li>Register your delivery, and select if you want us to come pick it up.</li>
+                    <li>Make payment</li>
+                    <li>Track Your shipment till delivery</li>
+
+                </ul>
+                <div class="d-flex align-items-center">
+                    <i class="fa fa-headphones fa-2x flex-shrink-0 bg-primary p-3 text-white"></i>
+                    <div class="ps-4">
+                        <h6>Call for any query!</h6>
+                        <h3 class="text-primary m-0">+012 345 6789</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row g-4 align-items-center">
+                    <div class="col-sm-6">
+                        <div class="bg-primary p-4 mb-4 wow fadeIn" data-wow-delay="0.3s">
+                            <i class="fa fa-users fa-2x text-white mb-3"></i>
+                            <h2 class="text-white mb-2" data-toggle="counter-up">945</h2>
+                            <p class="text-white mb-0">Customers Served</p>
+                        </div>
+                        <div class="bg-secondary p-4 wow fadeIn" data-wow-delay="0.5s">
+                            <i class="fa fa-ship fa-2x text-white mb-3"></i>
+                            <h2 class="text-white mb-2" data-toggle="counter-up">4347</h2>
+                            <p class="text-white mb-0">Packages Delivered</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="bg-success p-4 wow fadeIn" data-wow-delay="0.7s">
+                            <i class="fa fa-star fa-2x text-white mb-3"></i>
+                            <h2 class="text-white mb-2" data-toggle="counter-up">1605</h2>
+                            <p class="text-white mb-0">Customer Reviews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fact End -->
+
+
+<!-- Service Start -->
+<div class="container-xxl py-5" id="services">
+    <div class="container py-5">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="text-secondary text-uppercase">Our Services</h6>
+            <h1 class="mb-5">How We Make Your Lives Easier</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item p-4">
+                    <div class="overflow-hidden mb-4">
+                        <img class="img-fluid" src="{% static 'main/img/service-1.jpg' %}" alt="">
+                    </div>
+                    <h4 class="mb-3">Air Freight</h4>
+                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                    <!--a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a-->
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item p-4">
+                    <div class="overflow-hidden mb-4">
+                        <img class="img-fluid" src="{% static 'main/img/service-2.jpg' %}" alt="">
+                    </div>
+                    <h4 class="mb-3">Ocean Freight</h4>
+                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                    <!--a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a-->
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="service-item p-4">
+                    <div class="overflow-hidden mb-4">
+                        <img class="img-fluid" src="{% static 'main/img/service-3.jpg' %}" alt="">
+                    </div>
+                    <h4 class="mb-3">Road Freight</h4>
+                    <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                    <!--a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Read More</span></a-->
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Service End -->
+
+
+<!-- Feature Start -->
+<div class="container-fluid overflow-hidden py-5 px-lg-0">
+    <div class="container feature py-5 px-lg-0">
+        <div class="row g-5 mx-lg-0">
+            <div class="col-lg-6 feature-text wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-secondary text-uppercase mb-3">Our Features</h6>
+                <h1 class="mb-5">We Have been Serving over Happy 4000 Customers for the past 12 years</h1>
+                <div class="d-flex mb-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <i class="fa fa-shipping-fast text-primary fa-3x flex-shrink-0"></i>
+                    <div class="ms-4">
+                        <h5>Fast and Efficient Delivery</h5>
+                        <p class="mb-0">Get your products delivered on time with our speedy and efficient delivery
+                            services that prioritize accuracy and reliability</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-5 wow fadeIn" data-wow-delay="0.5s">
+                    <i class="fa   fa-warehouse text-primary fa-3x flex-shrink-0"></i>
+                    <div class="ms-4">
+                        <h5>Warehousing and Inventory Management</h5>
+                        <p class="mb-0">Our advanced warehousing and inventory management systems ensure safe and secure
+                            storage of your goods, giving you peace of mind</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-5 wow fadeInUp" data-wow-delay="0.7s">
+                    <i class="fa fa-headphones text-primary fa-3x flex-shrink-0"></i>
+                    <div class="ms-4">
+                        <h5>24/7 Customer Support</h5>
+                        <p class="mb-0">We value our estemmed customers and we priotize a hitch-free service delivery.
+                            Our support staffs are always available to respond to yourr questions and enquiries.</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-0 wow fadeInUp" data-wow-delay="0.7s">
+                    <i class="fa fa-code-branch text-primary fa-3x flex-shrink-0"></i>
+                    <div class="ms-4">
+                        <h5>Advanced Tracking and Reporting</h5>
+                        <p class="mb-0">Stay updated on your shipments with our advanced tracking and reporting systems,
+                            ensuring complete transparency and peace of mind.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 pe-lg-0 wow fadeInRight" data-wow-delay="0.1s" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute img-fluid w-100 h-100" src="{% static 'main/img/feature.jpg' %}"
+                        style="object-fit: cover;" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Feature End -->
+
+
+<!-- Pricing Start -->
+<div class="container-xxl py-5" id="pricing">
+    <div class="container py-5">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="text-secondary text-uppercase">Our Pricing</h6>
+            <h1 class="mb-5">Competitive Pricing </h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="price-item">
+                    <div class="border-bottom p-4 mb-4">
+                        <h5 class="text-primary mb-1">Small</h5>
+                        <h1 class="display-5 mb-0">
+                            <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>1200<small
+                                class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Kg / Mile</small>
+                        </h1>
+                    </div>
+                    <div class="p-4 pt-0">
+                        <p><i class="fa fa-check text-success me-3"></i>Less Than 50 Kg</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="price-item">
+                    <div class="border-bottom p-4 mb-4">
+                        <h5 class="text-primary mb-1">Medium</h5>
+                        <h1 class="display-5 mb-0">
+                            <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>1000<small
+                                class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Kg / Mile</small>
+                        </h1>
+                    </div>
+                    <div class="p-4 pt-0">
+                        <p><i class="fa fa-check text-success me-3"></i>More Than 50Kg</p>
+                        <p><i class="fa fa-check text-success me-3"></i>Less Than 100Kg</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="price-item">
+                    <div class="border-bottom p-4 mb-4">
+                        <h5 class="text-primary mb-1">Large</h5>
+                        <h1 class="display-5 mb-0">
+                            <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>800<small
+                                class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Kg / Mile</small>
+                        </h1>
+                    </div>
+                    <div class="p-4 pt-0">
+                        <p><i class="fa fa-check text-success me-3"></i>More Than 100Kg</p>
+                        <!--a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Order Now</span></a-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Pricing End -->
+
+
+
+
+
+<!-- Testimonial Start -->
+<div class="container-xxl py-3 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="text-center">
+            <h6 class="text-secondary text-uppercase">Testimonial</h6>
+            <h1 class="mb-0">What Our Clients Have To Say!</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+            <div class="testimonial-item p-4 my-5">
+                <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
+                <div class="d-flex align-items-end mb-4">
+                    <img class="img-fluid flex-shrink-0" src="{% static 'main/img/testimonial-1.jpg' %}"
+                        style="width: 80px; height: 80px;">
+                    <div class="ms-4">
+                        <h5 class="mb-1">Sarah Johnson</h5>
+                        <p class="m-0">Owner, Jewelry Store</p>
+                    </div>
+                </div>
+                <p class="mb-0">GTGCargoose made shipping my products effortless and cost-effective. As a small business
+                    owner, I appreciate their attention to detail and personalized service. Thank you to the GTGCargoose
+                    team for making my logistics needs stress-free!</p>
+            </div>
+            <div class="testimonial-item p-4 my-5">
+                <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
+                <div class="d-flex align-items-end mb-4">
+                    <img class="img-fluid flex-shrink-0" src="{% static 'main/img/testimonial-2.jpg' %}"
+                        style="width: 80px; height: 80px;">
+                    <div class="ms-4">
+                        <h5 class="mb-1">John Smith</h5>
+                        <p class="m-0">Freelance Artist</p>
+                    </div>
+                </div>
+                <p class="mb-0">I was hesitant to use a logistics company, but GTGCargoose exceeded my expectations.
+                    They provided timely updates and ensured my package arrived on time. Their customer service team was
+                    also top-notch!</p>
+            </div>
+            <div class="testimonial-item p-4 my-5">
+                <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
+                <div class="d-flex align-items-end mb-4">
+                    <img class="img-fluid flex-shrink-0" src="{% static 'main/img/testimonial-3.jpg' %}"
+                        style="width: 80px; height: 80px;">
+                    <div class="ms-4">
+                        <h5 class="mb-1">David Lee</h5>
+                        <p class="m-0">Fashion Store Owner</p>
+                    </div>
+                </div>
+                <p class="mb-0">I've worked with many logistics companies over the years, and GTGCargoose is by far the
+                    best. They are always on top of their game and make sure my shipments arrive on time, every time.
+                    Their competitive rates are just an added bonus!</p>
+            </div>
+            <div class="testimonial-item p-4 my-5">
+                <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
+                <div class="d-flex align-items-end mb-4">
+                    <img class="img-fluid flex-shrink-0" src="{% static 'main/img/testimonial-4.jpg' %}"
+                        style="width: 80px; height: 80px;">
+                    <div class="ms-4">
+                        <h5 class="mb-1">Emily Davis </h5>
+                        <p class="m-0">Marketing Manager</p>
+                    </div>
+                </div>
+                <p class="mb-0">GTGCargoose was a lifesaver for me during a recent cross-country move. They helped me
+                    with everything from packing my belongings to coordinating the delivery. Their team was
+                    professional, friendly, and reliable. Thank you, GTGCargoose!</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+
+<!-- Contact Start -->
+<div class="container-fluid overflow-hidden py-5 px-lg-0" id="contact">
+    <div class="container contact-page py-5 px-lg-0">
+        <div class="row g-5 mx-lg-0">
+            <div class="col-md-6 contact-form wow fadeIn" data-wow-delay="0.1s">
+                <h6 class="text-secondary text-uppercase">Get In Touch</h6>
+                <h1 class="mb-4">For Any Enquiry or Complaints</h1>
+                <p class="mb-4">Our Support team is always ready to respond to all of your complaints and enquiries.</p>
+                <div class="bg-light p-4">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                        style="height: 100px"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
                             </div>
                         </div>
-                        <div class="test-c d-none d-lg-block"></div>
-                        <div class="test-b d-none d-lg-block"></div>
-                    </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6 pe-lg-0 wow fadeInRight" data-wow-delay="0.1s">
+                <div class="position-relative h-100">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.175036365115!2d-97.73310518490216!3d30.321610281796703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644d4b25c9d7a09%3A0xd79cd07bb4c4e7a4!2s5200%20N%20Lamar%20Blvd%2C%20Austin%2C%20TX%2078751%2C%20USA!5e0!3m2!1sen!2s!4v1651847128148!5m2!1sen!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- testimonial-area end -->
+<!-- Contact End -->
 
-<!-- news letter -->
-<section class="newsletter-section newsletter-section-2">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Subscribe To Our Newsletter</h2>
-                <p>Keep in touch with our offers, promos and newsletters. Enter your email adrress.
-                <p>
-            </div>
-            <div class="col-lg-8">
-                <div class="newsletter">
-                    <div class="newsletter-form">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <form>
-                                    <input type="text" class="form-control" placeholder="Name">
-                                </form>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <form>
-                                    <input type="text" class="form-control" placeholder="Email">
-                                </form>
-                            </div>
-
-                            <div class="col-lg-4 col-md-4 col-sm-6">
-                                <button type="submit">Subscribe</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end container -->
-</section>
-<!-- end news letter -->
 
 
 {% endblock %}
