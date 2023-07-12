@@ -8,13 +8,13 @@ def core(request) :
     ctx = {}
 
     ctx['liquidity'] = 53199180
-    ctx['site_name_verbose'] = "GTG Cargoose"
-    ctx['site_name'] = "GTG Cargoose"
-    ctx['site_name_full'] = "GTG Cargoose"
-    ctx['support_email'] = "support@gtgcargoose.com"
-    ctx['site_email'] = "support@gtgcargoose.com"
+    ctx['site_name_verbose'] = "FX Cargoose"
+    ctx['site_name'] = "FX Cargoose"
+    ctx['site_name_full'] = "FX Cargoose"
+    ctx['support_email'] = "support@fxcargoose.com"
+    ctx['site_email'] = "support@fxcargoose.com"
     ctx['site_phone'] = "+3594858"
-    ctx['site_whatsapp_no'] = "+66658656fg6"
+    ctx['site_whatsapp_no'] = "+65156586566"
     ctx['site_address'] = "No 23 winston road new york"
 
     epoch_time = datetime.datetime(1970, 1, 1)
