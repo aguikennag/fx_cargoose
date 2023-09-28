@@ -5,16 +5,17 @@ from django.core.mail import send_mail
 from django.conf import settings
 
 from .forms import ContactForm
-
+from core.models import Blog
 
 class Index(TemplateView) :
     template_name = 'index.html'
 
     def get_context_data(self,*args,**kwargs) : 
         context = super(Index,self).get_context_data(*args,**kwargs) 
-    
+        context['blogs'] = Blog.objects.all()[:2]
         return context
         
+
 
 class About(TemplateView) :
     template_name = 'about.html'
