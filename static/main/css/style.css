@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 :root {
-    --primary: #37bee0;
-    --secondary: #5185ed;
+    --primary: #FF3E41;
+    --secondary: #51CFED;
     --light: #F8F2F0;
     --dark: #060315;
 }
@@ -32,10 +32,10 @@
   }
 
   .jumbotron-fluid {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  
+  padding-right: 0;
+  padding-left: 0;
+}
+
 
 .back-to-top {
     position: fixed;
