@@ -25,13 +25,51 @@ SECRET_KEY = '24q_*&tn+5k_*6h6$nsccghwwb#8b%v4i)1h(wd08_02_-(czt'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ['*']
+
+
+
+JAZZMIN_SETTINGS = {
+    # title of the window (Will default to current_admin_site.site_title if absent or None)
+    "site_title": "Global Logistics Admin",
+
+    # Title on the login screen (19 chars max) (defaults to current_admin_site.site_header if absent or None)
+    "site_header": "Global Logistics",
+
+    # Title on the brand (19 chars max) (defaults to current_admin_site.site_header if absent or None)
+    "site_brand": "Global Logistics",
+
+    # Logo to use for your site, must be present in static files, used for brand on top left
+    "site_logo": "",
+
+    # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
+    "login_logo": "",
+
+    # Logo to use for login form in dark themes (defaults to login_logo)
+    "login_logo_dark": "",
+
+    # CSS classes that are applied to the logo above
+    "site_logo_classes": "logo",
+
+    "custom_css": "css/style.css",
+
+    # Relative path to a favicon for your site, will default to site_logo if absent (ideally 32x32 px)
+    #"site_icon": "img/favicon.png",
+
+    # Welcome text on the login screen
+    "welcome_sign": "Welcome Admin!",
+
+    # Copyright on the footer
+    "copyright": "Offshore-Pro",
+}
+
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -63,7 +101,7 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
-ROOT_URLCONF = 'gtc_cargoose.urls'
+ROOT_URLCONF = 'cargo.urls'
 
 
 
@@ -91,7 +129,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'gtc_cargoose.wsgi.application'
+WSGI_APPLICATION = 'cargo.wsgi.application'
 
 AUTH_USER_MODEL = 'Users.User'
 # Database
@@ -148,7 +186,7 @@ STATICFILES_DIRS = [
 os.path.join(BASE_DIR,"static")
 ]
 
-SITE_NAME = "loci Trade"
+SITE_NAME = "Global Transports"
 
 STATIC_ROOT = os.path.join(BASE_DIR,"asset")
 

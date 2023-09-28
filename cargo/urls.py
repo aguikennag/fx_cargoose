@@ -7,9 +7,10 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin-access/', admin.site.urls),
     path('',include('company.urls')),
     path('',include('Users.urls')),
+    path('',include('core.urls')),
     path('logistics/',include('logistics.urls')),
     path('myadmin/',include('myadmin.urls')),
     path('accounts/',include('django.contrib.auth.urls')),

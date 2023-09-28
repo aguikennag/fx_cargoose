@@ -8,12 +8,12 @@ def core(request) :
     ctx = {}
 
     ctx['liquidity'] = 53199180
-    ctx['site_name_verbose'] = "FX Cargoose"
-    ctx['site_name'] = "FX Cargoose"
-    ctx['site_name_full'] = "FX Cargoose"
-    ctx['support_email'] = "support@fxcargoose.com"
-    ctx['site_email'] = "support@fxcargoose.com"
-    ctx['site_phone'] = "+3594858"
+    ctx['site_name_verbose'] = "Global Transports"
+    ctx['site_name'] = "Global Transports"
+    ctx['site_name_full'] = "Global Transports"
+    ctx['support_email'] = "support@globaltransports.ltd"
+    ctx['site_email'] = "support@globaltransports.ltd"
+    ctx['site_phone'] = "+3594858322"
     ctx['site_whatsapp_no'] = "+65156586566"
     ctx['site_address'] = "No 23 winston road new york"
 
@@ -25,6 +25,9 @@ def core(request) :
 
     ctx['package_delivered'] = packages_delivered if packages_delivered < 121000 else 121000
     ctx['users_served'] = users_served if users_served < 35624 else  35624
+
+
+  
     
     return ctx  
 

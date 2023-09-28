@@ -1,5 +1,5 @@
 """
-WSGI config for gtc_cargoose project.
+WSGI config for cargo project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'gtc_cargoose.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'cargo.settings')
 
 application = get_wsgi_application()
