@@ -167,8 +167,6 @@ class Shipment(models.Model) :
         return log
 
 
-    
-     
 
 class StatusLog(models.Model) :
     initial_terminal_name = "Collecting"
@@ -185,6 +183,9 @@ class StatusLog(models.Model) :
     status  = models.CharField(max_length = 10,choices = StatusChoices)
     date = models.DateTimeField() #editable
 
+    def __str__(self) :
+        return "{} - {}".format(self.shipment,self.status)
+
     class Meta() :
         ordering = ['-date']
 
@@ -194,7 +195,9 @@ class StatusLog(models.Model) :
             #if not raise an Object Does not Exists exception and prevent save
             _ = self.shipment.transit_logs
 
-        if not self.date : self.date = timezone.now()    
+        if not self.date : self.date = timezone.now()  
+        #send email
+          
         super(StatusLog,self).save(*args,**kwargs) 
     
     @property
@@ -225,6 +228,19 @@ class TransitLog(models.Model) :
     #station = models.ForeignKey(Station,on_delete = models.CASCADE,related_name ="transit_logs")
     station = models.CharField(max_length=30)
     date = models.DateTimeField()  #editable
+
+
+    def __str__(self) :
+        if self.status == "arrived" :
+            return "shipemnt {}, arrived at station-{} @{}".format(self.shipment,self.station,self.date)
+        
+        elif self.status == "proccessing" :
+            return "shipemnt {}, processed at station-{} @{}".format(self.shipment,self.station,self.date)
+        
+        else :
+            return "shipemnt {}, dispatched from station-{} @{}".format(self.shipment,self.station,self.date)
+
+
 
     def save(self,*args,**kwargs) :
         if not self.date : self.date = timezone.now()  

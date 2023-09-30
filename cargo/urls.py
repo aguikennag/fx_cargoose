@@ -13,7 +13,7 @@ urlpatterns = [
     path('',include('core.urls')),
     path('logistics/',include('logistics.urls')),
     path('myadmin/',include('myadmin.urls')),
-    path('accounts/',include('django.contrib.auth.urls')),
+    #path('accounts/',include('django.contrib.auth.urls')),
 
 ]
 

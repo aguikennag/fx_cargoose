@@ -203,17 +203,14 @@ STATIC_URL = '/static/'
 EMAIL_HOST  = "smtp.zoho.com"
 EMAIL_PORT = "587"
 #for other emails 
-EMAIL_HOST_USER = "support@afflus-trade.com"
-DEFAULT_FROM_EMAIL  = "support@afflus-trade.com"
-EMAIL_HOST_PASSWORD = '#@Kyletech99'
-EMAIL_HOST_USER_ALERT = "transaction@afflus-trade.com"
-EMAIL_HOST_USER_SUPPORT = "support@afflus-trade.com"
+EMAIL_HOST_USER = "support@globaltransports.ltd"
+DEFAULT_FROM_EMAIL  = "support@globaltransports.ltd"
+EMAIL_HOST_PASSWORD = '#Thop!$9!!0f'
+EMAIL_HOST_USER_LOGISTICS = "logistics@globaltransports.ltd"
+EMAIL_HOST_USER_SUPPORT = "support@globaltransports.ltd"
 
 EMAIL_USE_TLS = "True"
 
-SITE_NAME = "AFFLUS TRADE"
-SITE_ADDRESS = "https://www.afflus-trade.com/"
-
-FREE_PLAN_DURATION = 2  #in days
-SUBSCRIPTION_DURATION = 365   #in days
+SITE_NAME = "Global Transports"
+SITE_ADDRESS = "https://www.globaltransports.ltd/"
 

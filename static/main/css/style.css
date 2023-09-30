@@ -40,9 +40,10 @@
 .back-to-top {
     position: fixed;
     display: none;
-    right: 45px;
-    bottom: 45px;
+    left: 45px;
+    bottom: 25px;
     z-index: 99;
+    border-radius: 15px;
 }
 
 

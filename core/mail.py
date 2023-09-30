@@ -28,50 +28,6 @@ import random
 
 
 
-class ValidationCode()     :
-    @staticmethod
-    def generate_code(user,email=None,phone_number=None,offset = None,send_type = 'message') :
-        """ offset is the active time for the code,
-        """
-        offset = offset or 5
-        expiry = timezone.now() + timezone.timedelta(minutes=offset)
-        code = random.randrange(99999,999999)
-        db = user.dashboard
-        db.otc = int(code)
-        db.otc_expiry = expiry
-        db.save()
-        ctx = {'expiry' : expiry.time(),'code' : code}
-        email_receiver = user.email
-        #payload = self.convert_html_to_pdf(template_name,ctx)
-        name = user.name or user.username
-             
-  
-
-        if send_type == 'email' :
-            subject = "Nintrend ltd. email verification"
-            mail = Email(send_type='support')
-            ctx['name'] = name
-            mail.send_html_email([email_receiver],subject,"otp-email.html",ctx=ctx)
-
-
-    @staticmethod
-    def validate_otc(user,code) :
-        """
-        returns a tuple of the validations state and error  if theres any or None as 2nd index
-        """
-        if user.dashboard.otc == int(code) :
-            if not timezone.now() < user.dashboard.otc_expiry :
-                error = "The entered code is correct,but has expired"
-                return (False,error)
-            else : 
-                return (True,None)  
-
-        else :
-            return (False,"The entered code is incorrect")  
-
-        return (False,"unknown error occured")           
-
-
 class EmailMultiRelated(EmailMultiAlternatives):
     """
     A version of EmailMessage that makes it easy to send multipart/related
@@ -156,7 +112,6 @@ class EmailMultiRelated(EmailMultiAlternatives):
         return attachment
 
 
-
 class Email() :
 
     def __init__(self,send_type = "support") :
@@ -166,7 +121,7 @@ class Email() :
         password =    settings.EMAIL_HOST_PASSWORD  
         senders = {
             'alert' : settings.EMAIL_HOST_USER_ALERT,
-        'support' : settings.EMAIL_HOST_USER_SUPPORT }
+            'support' : settings.EMAIL_HOST_USER_SUPPORT }
         self.send_from = senders.get(send_type,senders['alert'])
         self.auth_connecion = get_connection(
             host = host,
@@ -248,9 +203,10 @@ class Email() :
             self.auth_connecion.close()
         except : pass
 
-    def send_withdrawal_mail(self,withdrawal_object) :
+    def send_transit_alert_mail(self,transit_log_object) :
+        tlo = transit_log_object
         ctx = {
-            'name' : withdrawal_object.user.name,
+            'name' :tlo.shipment.name,
             'text' : """
             <p>This is to inform you that {0} worth of ${1} has been sent to your wallet successfully
             </p>
