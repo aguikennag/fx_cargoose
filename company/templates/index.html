@@ -19,6 +19,7 @@
                             <h2 class="display-3 text-white animated slideInDown mb-4">
                                 The Most Efficient Way To Move Your<span class="text-primary"> Packages</span> Around
                                 The World
+
                             </h2>
                             <p class="fs-5 fw-medium text-white mb-4 pb-2">Your one stop for everything logistics.</p>
                             <a href="#tracking" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Track
@@ -74,10 +75,11 @@
             </div>
             <div class="col-lg-7">
                 <div class="bg-light text-center p-5 wow fadeIn" data-wow-delay="0.5s">
-                    <form method="GET" action="{% url 'track-shipment' %}">
+                    <form method="GET" action="{% url 'track-shipment' %}" class="track-shipment">
                         <div class="row g-3">
 
                             <div class="col-12 mb-5">
+    
                                 <input name="tracking_number" type="text" class="form-control border-0"
                                     placeholder="Enter Tracking Number" style="height: 55px;">
                             </div>

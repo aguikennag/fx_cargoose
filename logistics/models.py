@@ -6,6 +6,7 @@ import re
 
 from core.models import Country
 
+
 class Station(models.Model) :
     name = models.CharField(max_length=30)
     address = models.CharField(max_length=100)
@@ -45,9 +46,32 @@ class Shipment(models.Model) :
     receiver_address = models.CharField(max_length = 200)
     receiver_phone_number = models.CharField(max_length = 20)
     receiver_email = models.EmailField()
-
-
     date = models.DateTimeField(auto_now_add = True)
+    _estimated_arrival_date = models.DateTimeField(null=True,blank=True)
+    _estimated_departure_date = models.DateTimeField( blank=True,null=True)
+
+    
+    @property
+    def fragility(self) :
+        return "YES" if self.is_fragile else "NO"
+    
+    @property
+    def origin(self) :
+        return "{}, {}".format(self.source_address,self.source_country)
+    
+    @property
+    def destination(self) :
+        return "{}, {}".format(self.destination_address,self.destination_country)
+    
+    @property
+    def estimated_arrival_date(self) :
+        return self._estimated_arrival_date or self._estimated_arrival_date  +  timezone.timedelta(weeks=3)
+    
+     
+    @property
+    def estimated_departure_date(self) :
+        return self._estimated_departure_date or self.date  +  timezone.timedelta(days=2)
+ 
 
     def __str__(self) :
         return self.tracking_number
@@ -232,13 +256,13 @@ class TransitLog(models.Model) :
 
     def __str__(self) :
         if self.status == "arrived" :
-            return "shipemnt {}, arrived at station-{} @{}".format(self.shipment,self.station,self.date)
+            return "shipment {}, arrived at station-{} on {}".format(self.shipment,self.station,self.date.strftime("%d %b, %Y. %I:%M %p"))
         
         elif self.status == "proccessing" :
-            return "shipemnt {}, processed at station-{} @{}".format(self.shipment,self.station,self.date)
+            return "shipment {}, processed at station-{} on {}".format(self.shipment,self.station,self.date.strftime("%d %b, %Y. %I:%M %p"))
         
         else :
-            return "shipemnt {}, dispatched from station-{} @{}".format(self.shipment,self.station,self.date)
+            return "shipment {}, dispatched from station-{} on {}".format(self.shipment,self.station,self.date.strftime("%d %b, %Y. %I:%M %p"))
 
 
 

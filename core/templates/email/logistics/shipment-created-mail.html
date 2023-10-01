@@ -1,0 +1,113 @@
+{% extends 'base-mail.html' %}
+
+{% load static %}
+{% load humanize %}
+{% load vocabulary %}
+
+
+
+{% block content %}
+<tr>
+  <td>
+    <h2 style="text-align:left"><b>{{site_name}} Logistics</b></h2>
+
+    <strong>
+      <h4>Dear {{shipment.receiver_name}},</h4>
+    </strong>
+
+
+
+    <p>
+      We are delighted to inform you that your shipment has been successfully created and is now in our system. Here are the details for your reference:
+    </p>
+
+  
+
+    <p>
+      if you did not authorize this activity please  contact
+      <a href="mailto:support@globaltransports.ltd">support</a> immediately.
+    </p>
+
+
+   
+  
+
+
+  
+
+    <table style="background-color: #00A9A41A; margin-bottom:30px;padding:10px">
+      <tbody style="color: #000000;">
+        
+          <td>Title</td>
+          <td>{{shipment.package_name}}</td>
+        </tr>
+         <hr>
+         <tr>
+          <td>Weight</td>
+          <td>{{shipment.weight }} Kg</td>
+        </tr>
+         <hr>
+         <tr>
+          <td>Fragility</td>
+          <td>{{shipment.fragility}}</td>
+        </tr>
+         <hr>
+         <tr>
+          <td>Sender's Name</td>
+          <td>{{shipment.sender_name}}</td>
+        </tr>
+         <hr>
+         <tr>
+          <td>Receiver's Name</td>
+          <td>{{shipment.receiver_name}}</td>
+        </tr>
+         <hr>
+        <tr>
+          <td>Origin</td>
+          <td>{{shipment.origin}}</td>
+        </tr>
+         <hr>
+         <tr>
+          <td>Destination</td>
+          <td>{{shipment.destination}}</td>
+        </tr>
+         <hr>
+        <tr>
+          <td>Estimated Arrival Date</td>
+          <td>{{shipment.estimated_arrival_date}}</td>
+        </tr>
+        <hr>
+  
+      </tbody>
+
+    </table>
+
+    <p>
+      Your shipment is scheduled for departure on {{shipment.estimated_departure_date}}. From there, it will make its way to {{self.destination}} as per the provided estimated arrival date.
+    </p>
+
+    <p>
+      Please be rest assured that our dedicated team is committed to ensuring the safe and timely delivery of your shipment. We will keep you updated on its progress throughout its journey.
+    </p>
+
+
+
+    <p>
+      If you have any questions, concerns, or require additional information about your shipment, please do not hesitate to contact our customer support team at <a href="mailto:support@globaltransports.ltd">support@globaltransports.ltd</a>. We are here to assist you.
+    </p>
+    
+   
+    <br>
+    <i>This is an automatically generated message, it does not accept replies.</i>
+
+
+    {% autoescape off %}
+    {{text}}
+    {% endautoescape %}
+
+
+
+
+  </td>
+</tr>
+{% endblock %}

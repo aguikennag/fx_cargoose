@@ -109,6 +109,57 @@
             }
         }
     });
+
+
+   // 
+    $(document).on('submit','.track-shipment',function(event){
+        event.preventDefault();
+        $("#load-modal").modal("show");
+       
+        var form  = $(this);
+        
+        $.ajax({
+            type:"GET",
+            url : form.attr('action'),
+            data : form.serialize(),
+            dataType : 'json',
+            success : function(data){
+                //cancel modal
+                
+             
+             if(data.success){
+                $("#load-modal").modal("toggle")
+                //navigate to pin
+                window.location.href = data.success_url
+             }
+    
+             else if(data.error){
+                $("#load-modal").modal("toggle")
+                $("#error-modal-content").html("")
+                $("#error-modal-content").html(data.error)
+                $("#error-modal").modal("show")
+             }
+            }
+        });
+        return false;
+    });
+
+    function centerModal() {
+        $(this).css('display', 'block');
+        var $dialog  = $(this).find(".modal-dialog"),
+        y_offset       = ($(window).height() - $dialog.height()) / 2,
+    
+        bottomMargin = parseInt($dialog.css('marginBottom'), 10);
+
+        // Make sure you don't hide the top part of the modal w/ a negative margin if it's longer than the screen height, and keep the margin equal to the bottom margin of the modal
+        if(y_offset < bottomMargin) y_offset = bottomMargin;
+        $dialog.css("margin-top", y_offset);
+      
+    }
+
+    $(document).on('show.bs.modal', '.modal', centerModal);
+
+    
     
 })(jQuery);
 

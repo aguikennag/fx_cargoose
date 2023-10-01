@@ -1,21 +1,31 @@
 from django.shortcuts import render,get_object_or_404
 
 from django.views.generic import View,DetailView
-from django.http import HttpResponse,HttpResponseRedirect
+from django.http import HttpResponse,HttpResponseRedirect,JsonResponse
 from django.urls import reverse
 
 from logistics.models import Shipment
 
 from myadmin.forms import StatusLogForm, TransitLogForm
+import time
+
 
 
 class TrackShipment(View) :
 
     def get(self,request,*args,**kwargs) :
+        feedback = {}
+        time.sleep(2)
         tracking_number = request.GET.get("tracking_number")
         if not tracking_number :
-            return HttpResponse("Invalid request, a tracking number is expected")
-        return HttpResponseRedirect(reverse("shipment-detail",args=[tracking_number.strip()]))    
+            feedback['error'] = "Invalid request, a tracking number is expected"
+
+        else :
+            feedback['success'] = True
+            feedback['success_url'] = reverse("shipment-detail",args=[tracking_number.strip()])
+        
+        return JsonResponse(feedback)
+  
 
 
 
@@ -24,8 +34,6 @@ class ShipmentDetail(View) :
     context_object_name = "shipment"
 
     def get_template_name(self) :
-        if self.request.user.is_superuser :
-            return "shipment-detail-admin.html"
         return "shipment-detail.html"    
 
 

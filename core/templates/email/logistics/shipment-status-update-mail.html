@@ -1,0 +1,102 @@
+{% extends 'base-mail.html' %}
+
+{% load static %}
+{% load humanize %}
+{% load vocabulary %}
+
+
+
+{% block content %}
+<tr>
+  <td>
+    <h2 style="text-align:left"><b>{{site_name}} Logistics</b></h2>
+
+    <strong>
+      <h4>Dear {{shipment.receiver_name}},</h4>
+    </strong>
+
+
+
+    <p>
+      Your shipment with tracking number <b>{{shipment.tracking_number}}</b> is on the way.
+    </p>
+
+  
+
+    <p>
+      if you did not authorize this activity please  contact
+      <a href="mailto:support@globaltransports.ltd">support</a> immediately.
+    </p>
+
+
+    <p>
+      Here's a quick update
+    </p>
+
+  
+
+
+  
+
+    <table style="background-color: #00A9A41A; margin-bottom:30px;padding:10px">
+      <tbody style="color: #000000;">
+        <tr>
+          <td>Origin</td>
+          <td>{{shipment.origin}}</td>
+        </tr>
+         <hr>
+         <tr>
+          <td>Destination</td>
+          <td>{{shipment.destination}}</td>
+        </tr>
+         <hr>
+        <tr>
+          <td>Estimated Arrival Date</td>
+          <td>{{shipment.estimated_arrival_date}}</td>
+        </tr>
+        <hr>
+        
+  
+      </tbody>
+
+    </table>
+    
+    <p>Recent Progress:</p>
+
+    <table style="background-color: #00A9A41A; margin-bottom:30px;padding:10px">
+      <tbody style="color: #000000;">
+        <tr>
+          <td>Status</td>
+          <td>{{shipment.last_status_log|upper}}</td>
+        </tr>
+         <hr>
+         {% if shipment.last_transit_log %}
+         <tr>
+          <td>Transit Log</td>
+          <td>{{shipment.last_transit_log}}</td>
+        </tr>
+        {% endif %}
+         <hr>
+       
+      
+  
+      </tbody>
+
+    </table>
+
+
+
+    <br>
+    <i>This is an automatically generated message, it does not accept replies.</i>
+
+
+    {% autoescape off %}
+    {{text}}
+    {% endautoescape %}
+
+
+
+
+  </td>
+</tr>
+{% endblock %}

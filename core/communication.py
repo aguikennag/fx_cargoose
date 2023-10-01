@@ -24,18 +24,27 @@ import os
 
 class LogisticsMail() :
 
-    def __init__(self,transaction) :
-        self.transaction = transaction
+    def __init__(self,shipment) :
+        self.shipment= shipment
         self.mail = Email("logistics")
 
-    def send_shipemnt_progress_mail(self) :
-        template_name = "transaction/transaction-mail.html"
+    def send_shipment_progress_mail(self) :
+        template_name = "shipment-status-update-mail.html"
         self.mail.send_html_email(
             [self.shipment.receiver_email,self.shipment.sender_email ],
             template_name,
-            subject= "Shipment Progress for #{}".format(capitalize(self.shipment)),
+            subject= "Shipment Transit Update - Tracking Number: {}".format(capitalize(self.shipment.tracking_number)),
             ctx = {"shipment" : self.shipment }
         )
+
+    def send_shipment_created_mail(self) :
+        template_name = "shipment-created-mail.html"
+        self.mail.send_html_email(
+            [self.shipment.receiver_email,self.shipment.sender_email ],
+            template_name,
+            subject= "Shipment Created - Tracking Number: {}".format(capitalize(self.shipment.tracking_number)),
+            ctx = {"shipment" : self.shipment }
+        )    
        
 
   

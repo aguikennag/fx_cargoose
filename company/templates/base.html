@@ -38,13 +38,14 @@
         }
     </style>
 
-    <!--Start of Tawk.to Script-->
+
+<!--Start of Tawk.to Script-->
 <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
     var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
     s1.async=true;
-    s1.src='https://embed.tawk.to/6516a8eb10c0b2572486c50f/1hbg87mh9';
+    s1.src='https://embed.tawk.to/65197fa710c0b2572487634e/1hblpla4n';
     s1.charset='UTF-8';
     s1.setAttribute('crossorigin','*');
     s0.parentNode.insertBefore(s1,s0);
@@ -145,6 +146,37 @@
     </div>
     <!-- Footer End -->
 
+    <div class="modal fade" id="load-modal" style="align-items: center;text-align: center;padding-left: 32%;">
+        <div class="modal-dialog modal-sm" style="padding: 10px;">
+            <div class="modal-content" style="width: fit-content;">
+               
+                <div class="modal-body p-md-4 p-lg-5" >
+                    <img src="{% static 'main/img/loader2.webp' %}" height="50px" width="50px">
+                </div>
+                
+            </div>
+        </div> 
+    </div><!-- .modal @e -->
+
+     <!-- Modal @s -->
+     <div class="modal fade" id="error-modal" >
+        <div class="modal-dialog modal-xl">
+            
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" class="text-danger">Error !</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                <div class="modal-body p-md-4 p-lg-5"  id="error-modal-content">
+                    Please Correct Form Errors !
+                </div>
+            </div>
+        </div>
+    </div><!-- .modal @e -->
+
+
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
@@ -161,6 +193,8 @@
 
     <!-- Template Javascript -->
     <script src="{% static 'main/js/main.js' %}""></script>
+
+
 </body>
 
 </html>
