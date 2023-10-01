@@ -113,7 +113,7 @@ class Email() :
         email.mixed_subtype = "related"
  
         BASE_DIR = settings.STATIC_URL
-        logo_path = os.path.join(settings.BASE_DIR,"static/img/logo.png")
+        logo_path = os.path.join(settings.BASE_DIR,"static/main/img/logo-light.png")
         with open(logo_path,'rb') as f :
             logo = MIMEImage(f.read())
             logo.add_header("Content-ID","<logo.png>")

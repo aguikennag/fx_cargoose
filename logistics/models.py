@@ -27,7 +27,7 @@ class Shipment(models.Model) :
     tracking_number = models.CharField(default= get_tracking_number, max_length=8,blank = True)
     is_fragile = models.BooleanField(default=False)
     is_paid = models.BooleanField(default=False,blank = True)
-    shipment_fee = models.DecimalField(decimal_places=2,max_digits=100,blank = True,help_text = "in dollars($)")
+    shipment_fee = models.DecimalField(decimal_places=2,max_digits=100,help_text = "in dollars($)")
     
     #shipment info
     source_country = models.ForeignKey(Country,on_delete = models.CASCADE,related_name="shipment_source")
@@ -50,7 +50,7 @@ class Shipment(models.Model) :
     _estimated_arrival_date = models.DateTimeField(null=True,blank=True)
     _estimated_departure_date = models.DateTimeField( blank=True,null=True)
 
-    
+
     @property
     def fragility(self) :
         return "YES" if self.is_fragile else "NO"
