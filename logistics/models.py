@@ -121,7 +121,10 @@ class Shipment(models.Model) :
 
     @property
     def registration_date(self) :
-        return self.status_logs.filter(status = "registered").first().date        
+        try :
+            return self.status_logs.filter(status = "registered").first().date 
+        except :
+            return       
     
 
     @property
