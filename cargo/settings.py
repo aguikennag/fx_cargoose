@@ -25,7 +25,7 @@ SECRET_KEY = '24q_*&tn+5k_*6h6$nsccghwwb#8b%v4i)1h(wd08_02_-(czt'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 LOGGING = {
@@ -199,7 +199,7 @@ STATICFILES_DIRS = [
 os.path.join(BASE_DIR,"static")
 ]
 
-SITE_NAME = "Global Transports"
+SITE_NAME = "FX Cargoose"
 
 STATIC_ROOT = os.path.join(BASE_DIR,"asset")
 
@@ -207,23 +207,5 @@ STATIC_URL = '/static/'
 #STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
  
 
-LOGIN_REDIRECT_URL = 'login-redirect'
 
-LOGOUT_REDIRECT_URL = 'index'
-STATIC_URL = '/static/'
-
-#EMAIL FOR ZOHO
-EMAIL_HOST  = "smtp.zoho.com"
-EMAIL_PORT = "587"
-#for other emails 
-EMAIL_HOST_USER = "support@globaltransports.ltd"
-DEFAULT_FROM_EMAIL  = "support@globaltransports.ltd"
-EMAIL_HOST_PASSWORD = '#Thop!$9!!0f'
-EMAIL_HOST_USER_LOGISTICS = "logistics@globaltransports.ltd"
-EMAIL_HOST_USER_SUPPORT = "support@globaltransports.ltd"
-
-EMAIL_USE_TLS = "True"
-
-SITE_NAME = "Global Transports"
-SITE_ADDRESS = "https://www.globaltransports.ltd/"
 
