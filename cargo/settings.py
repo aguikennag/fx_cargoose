@@ -178,6 +178,19 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 """
 
+
+#EMAIL FOR ZOHO
+EMAIL_HOST  = "smtp.zoho.com"
+EMAIL_HOST_USER_TRANSACTION = "alert@fxcargoose.com"
+EMAIL_HOST_USER_ALERT = "alert@fxcargoose.com"
+EMAIL_HOST_USER_SUPPORT = "support@fxcargoose.com"
+PASSWORD = "iWH2pN86#fsD&Ha"
+
+#TAWKTO
+EMAIL = "kennedyzhang7@gmail.com"
+PASSWORD = "iWH2pN86#fsD&Ha" 
+
+
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
