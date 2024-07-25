@@ -1,0 +1,3150 @@
+[
+{
+    "model": "sessions.session",
+    "pk": "6flrwjr2mj7o0qbw31bmg2l38u99f91z",
+    "fields": {
+        "session_data": "NTIwNTUxNjdhMWRiMDQ3MWUwODUzYWQ3M2I1Y2NlOTRkYjBlZTVmZTp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3NmUwNTcyNzE5ZjdmYWI4NzYzNzY4ZTQ0YjI0YjMxZmI1YjkwOTdmIn0=",
+        "expire_date": "2024-04-17T23:33:26.745Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "pld9m1p5m4wg5aylikxl22uf9rvu7yvl",
+    "fields": {
+        "session_data": "NTIwNTUxNjdhMWRiMDQ3MWUwODUzYWQ3M2I1Y2NlOTRkYjBlZTVmZTp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3NmUwNTcyNzE5ZjdmYWI4NzYzNzY4ZTQ0YjI0YjMxZmI1YjkwOTdmIn0=",
+        "expire_date": "2024-04-27T16:11:58.509Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "vhxfou3pvoa0dm7ztv8aue1lyfgd7q8b",
+    "fields": {
+        "session_data": "NTIwNTUxNjdhMWRiMDQ3MWUwODUzYWQ3M2I1Y2NlOTRkYjBlZTVmZTp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3NmUwNTcyNzE5ZjdmYWI4NzYzNzY4ZTQ0YjI0YjMxZmI1YjkwOTdmIn0=",
+        "expire_date": "2024-06-26T04:36:39.587Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "xt2c58lv087386ep7ymg1bg69vnqv022",
+    "fields": {
+        "session_data": "N2MxMzY1ZjBmNGZhODhmMjQxNTcwYmMxMTkxNjg5YTVkMzQ1NDFlYzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJhNDQyMjdmOGQ4MmE0MjgyOTZlZDE3OTkyOTNjY2I2ODljMTYwZWQ0In0=",
+        "expire_date": "2023-10-12T20:41:35.093Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "y9cyjjjg4k18lxm8hsx01lkx7pfeypf2",
+    "fields": {
+        "session_data": "NTIwNTUxNjdhMWRiMDQ3MWUwODUzYWQ3M2I1Y2NlOTRkYjBlZTVmZTp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3NmUwNTcyNzE5ZjdmYWI4NzYzNzY4ZTQ0YjI0YjMxZmI1YjkwOTdmIn0=",
+        "expire_date": "2024-04-19T15:40:03.587Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "zmu86z3zlwl85foiszk35gch8ed42t8m",
+    "fields": {
+        "session_data": "NTIwNTUxNjdhMWRiMDQ3MWUwODUzYWQ3M2I1Y2NlOTRkYjBlZTVmZTp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI3NmUwNTcyNzE5ZjdmYWI4NzYzNzY4ZTQ0YjI0YjMxZmI1YjkwOTdmIn0=",
+        "expire_date": "2024-05-29T05:07:44.085Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "zsa110moed6ar61lo35dm6yjr4i7y4wd",
+    "fields": {
+        "session_data": "N2MxMzY1ZjBmNGZhODhmMjQxNTcwYmMxMTkxNjg5YTVkMzQ1NDFlYzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJhNDQyMjdmOGQ4MmE0MjgyOTZlZDE3OTkyOTNjY2I2ODljMTYwZWQ0In0=",
+        "expire_date": "2023-10-17T05:30:50.349Z"
+    }
+},
+{
+    "model": "Users.user",
+    "fields": {
+        "password": "pbkdf2_sha256$180000$oopSUWSVgJGX$Xxl/WGpKPQajCThhgTdu0+84rat2eo3YBSVjFJnKp6Y=",
+        "last_login": "2023-10-03T05:30:50.319Z",
+        "is_superuser": true,
+        "username": "frank",
+        "first_name": "",
+        "last_name": "",
+        "email": "do@f.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-09-28T12:22:32.489Z",
+        "name": "",
+        "phone_number": "",
+        "picture": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "Users.user",
+    "fields": {
+        "password": "pbkdf2_sha256$180000$dpRxx12w6bYm$jiUmLCr9/fWr1KhGpc8fCFvqphOf0+vRDgd7Gfns8cI=",
+        "last_login": "2024-06-12T04:36:39.567Z",
+        "is_superuser": true,
+        "username": "human",
+        "first_name": "",
+        "last_name": "",
+        "email": "human@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-04-03T23:17:47.444Z",
+        "name": "",
+        "phone_number": "",
+        "picture": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "core.country",
+    "pk": 1,
+    "fields": {
+        "name": "Afghanistan",
+        "short_name": "AF"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 2,
+    "fields": {
+        "name": "Åland Islands",
+        "short_name": "AX"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 3,
+    "fields": {
+        "name": "Albania",
+        "short_name": "AL"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 4,
+    "fields": {
+        "name": "Algeria",
+        "short_name": "DZ"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 5,
+    "fields": {
+        "name": "American Samoa",
+        "short_name": "AS"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 6,
+    "fields": {
+        "name": "AndorrA",
+        "short_name": "AD"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 7,
+    "fields": {
+        "name": "Angola",
+        "short_name": "AO"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 8,
+    "fields": {
+        "name": "Anguilla",
+        "short_name": "AI"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 9,
+    "fields": {
+        "name": "Antarctica",
+        "short_name": "AQ"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 10,
+    "fields": {
+        "name": "Antigua and Barbuda",
+        "short_name": "AG"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 11,
+    "fields": {
+        "name": "Argentina",
+        "short_name": "AR"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 12,
+    "fields": {
+        "name": "Armenia",
+        "short_name": "AM"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 13,
+    "fields": {
+        "name": "Aruba",
+        "short_name": "AW"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 14,
+    "fields": {
+        "name": "Australia",
+        "short_name": "AU"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 15,
+    "fields": {
+        "name": "Austria",
+        "short_name": "AT"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 16,
+    "fields": {
+        "name": "Azerbaijan",
+        "short_name": "AZ"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 17,
+    "fields": {
+        "name": "Bahamas",
+        "short_name": "BS"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 18,
+    "fields": {
+        "name": "Bahrain",
+        "short_name": "BH"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 19,
+    "fields": {
+        "name": "Bangladesh",
+        "short_name": "BD"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 20,
+    "fields": {
+        "name": "Barbados",
+        "short_name": "BB"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 21,
+    "fields": {
+        "name": "Belarus",
+        "short_name": "BY"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 22,
+    "fields": {
+        "name": "Belgium",
+        "short_name": "BE"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 23,
+    "fields": {
+        "name": "Belize",
+        "short_name": "BZ"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 24,
+    "fields": {
+        "name": "Benin",
+        "short_name": "BJ"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 25,
+    "fields": {
+        "name": "Bermuda",
+        "short_name": "BM"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 26,
+    "fields": {
+        "name": "Bhutan",
+        "short_name": "BT"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 27,
+    "fields": {
+        "name": "Bolivia",
+        "short_name": "BO"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 28,
+    "fields": {
+        "name": "Bosnia and Herzegovina",
+        "short_name": "BA"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 29,
+    "fields": {
+        "name": "Botswana",
+        "short_name": "BW"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 30,
+    "fields": {
+        "name": "Bouvet Island",
+        "short_name": "BV"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 31,
+    "fields": {
+        "name": "Brazil",
+        "short_name": "BR"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 32,
+    "fields": {
+        "name": "British Indian Ocean Territory",
+        "short_name": "IO"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 33,
+    "fields": {
+        "name": "Brunei Darussalam",
+        "short_name": "BN"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 34,
+    "fields": {
+        "name": "Bulgaria",
+        "short_name": "BG"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 35,
+    "fields": {
+        "name": "Burkina Faso",
+        "short_name": "BF"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 36,
+    "fields": {
+        "name": "Burundi",
+        "short_name": "BI"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 37,
+    "fields": {
+        "name": "Cambodia",
+        "short_name": "KH"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 38,
+    "fields": {
+        "name": "Cameroon",
+        "short_name": "CM"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 39,
+    "fields": {
+        "name": "Canada",
+        "short_name": "CA"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 40,
+    "fields": {
+        "name": "Cape Verde",
+        "short_name": "CV"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 41,
+    "fields": {
+        "name": "Cayman Islands",
+        "short_name": "KY"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 42,
+    "fields": {
+        "name": "Central African Republic",
+        "short_name": "CF"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 43,
+    "fields": {
+        "name": "Chad",
+        "short_name": "TD"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 44,
+    "fields": {
+        "name": "Chile",
+        "short_name": "CL"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 45,
+    "fields": {
+        "name": "China",
+        "short_name": "CN"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 46,
+    "fields": {
+        "name": "Christmas Island",
+        "short_name": "CX"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 47,
+    "fields": {
+        "name": "Cocos (Keeling) Islands",
+        "short_name": "CC"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 48,
+    "fields": {
+        "name": "Colombia",
+        "short_name": "CO"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 49,
+    "fields": {
+        "name": "Comoros",
+        "short_name": "KM"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 50,
+    "fields": {
+        "name": "Congo",
+        "short_name": "CG"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 51,
+    "fields": {
+        "name": "Congo, The Democratic Republic of the",
+        "short_name": "CD"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 52,
+    "fields": {
+        "name": "Cook Islands",
+        "short_name": "CK"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 53,
+    "fields": {
+        "name": "Costa Rica",
+        "short_name": "CR"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 54,
+    "fields": {
+        "name": "Cote D'Ivoire",
+        "short_name": "CI"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 55,
+    "fields": {
+        "name": "Croatia",
+        "short_name": "HR"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 56,
+    "fields": {
+        "name": "Cuba",
+        "short_name": "CU"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 57,
+    "fields": {
+        "name": "Cyprus",
+        "short_name": "CY"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 58,
+    "fields": {
+        "name": "Czech Republic",
+        "short_name": "CZ"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 59,
+    "fields": {
+        "name": "Denmark",
+        "short_name": "DK"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 60,
+    "fields": {
+        "name": "Djibouti",
+        "short_name": "DJ"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 61,
+    "fields": {
+        "name": "Dominica",
+        "short_name": "DM"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 62,
+    "fields": {
+        "name": "Dominican Republic",
+        "short_name": "DO"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 63,
+    "fields": {
+        "name": "Ecuador",
+        "short_name": "EC"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 64,
+    "fields": {
+        "name": "Egypt",
+        "short_name": "EG"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 65,
+    "fields": {
+        "name": "El Salvador",
+        "short_name": "SV"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 66,
+    "fields": {
+        "name": "Equatorial Guinea",
+        "short_name": "GQ"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 67,
+    "fields": {
+        "name": "Eritrea",
+        "short_name": "ER"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 68,
+    "fields": {
+        "name": "Estonia",
+        "short_name": "EE"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 69,
+    "fields": {
+        "name": "Ethiopia",
+        "short_name": "ET"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 70,
+    "fields": {
+        "name": "Falkland Islands (Malvinas)",
+        "short_name": "FK"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 71,
+    "fields": {
+        "name": "Faroe Islands",
+        "short_name": "FO"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 72,
+    "fields": {
+        "name": "Fiji",
+        "short_name": "FJ"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 73,
+    "fields": {
+        "name": "Finland",
+        "short_name": "FI"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 74,
+    "fields": {
+        "name": "France",
+        "short_name": "FR"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 75,
+    "fields": {
+        "name": "French Guiana",
+        "short_name": "GF"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 76,
+    "fields": {
+        "name": "French Polynesia",
+        "short_name": "PF"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 77,
+    "fields": {
+        "name": "French Southern Territories",
+        "short_name": "TF"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 78,
+    "fields": {
+        "name": "Gabon",
+        "short_name": "GA"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 79,
+    "fields": {
+        "name": "Gambia",
+        "short_name": "GM"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 80,
+    "fields": {
+        "name": "Georgia",
+        "short_name": "GE"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 81,
+    "fields": {
+        "name": "Germany",
+        "short_name": "DE"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 82,
+    "fields": {
+        "name": "Ghana",
+        "short_name": "GH"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 83,
+    "fields": {
+        "name": "Gibraltar",
+        "short_name": "GI"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 84,
+    "fields": {
+        "name": "Greece",
+        "short_name": "GR"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 85,
+    "fields": {
+        "name": "Greenland",
+        "short_name": "GL"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 86,
+    "fields": {
+        "name": "Grenada",
+        "short_name": "GD"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 87,
+    "fields": {
+        "name": "Guadeloupe",
+        "short_name": "GP"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 88,
+    "fields": {
+        "name": "Guam",
+        "short_name": "GU"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 89,
+    "fields": {
+        "name": "Guatemala",
+        "short_name": "GT"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 90,
+    "fields": {
+        "name": "Guernsey",
+        "short_name": "GG"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 91,
+    "fields": {
+        "name": "Guinea",
+        "short_name": "GN"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 92,
+    "fields": {
+        "name": "Guinea-Bissau",
+        "short_name": "GW"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 93,
+    "fields": {
+        "name": "Guyana",
+        "short_name": "GY"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 94,
+    "fields": {
+        "name": "Haiti",
+        "short_name": "HT"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 95,
+    "fields": {
+        "name": "Heard Island and Mcdonald Islands",
+        "short_name": "HM"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 96,
+    "fields": {
+        "name": "Holy See (Vatican City State)",
+        "short_name": "VA"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 97,
+    "fields": {
+        "name": "Honduras",
+        "short_name": "HN"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 98,
+    "fields": {
+        "name": "Hong Kong",
+        "short_name": "HK"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 99,
+    "fields": {
+        "name": "Hungary",
+        "short_name": "HU"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 100,
+    "fields": {
+        "name": "Iceland",
+        "short_name": "IS"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 101,
+    "fields": {
+        "name": "India",
+        "short_name": "IN"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 102,
+    "fields": {
+        "name": "Indonesia",
+        "short_name": "ID"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 103,
+    "fields": {
+        "name": "Iran, Islamic Republic Of",
+        "short_name": "IR"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 104,
+    "fields": {
+        "name": "Iraq",
+        "short_name": "IQ"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 105,
+    "fields": {
+        "name": "Ireland",
+        "short_name": "IE"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 106,
+    "fields": {
+        "name": "Isle of Man",
+        "short_name": "IM"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 107,
+    "fields": {
+        "name": "Israel",
+        "short_name": "IL"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 108,
+    "fields": {
+        "name": "Italy",
+        "short_name": "IT"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 109,
+    "fields": {
+        "name": "Jamaica",
+        "short_name": "JM"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 110,
+    "fields": {
+        "name": "Japan",
+        "short_name": "JP"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 111,
+    "fields": {
+        "name": "Jersey",
+        "short_name": "JE"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 112,
+    "fields": {
+        "name": "Jordan",
+        "short_name": "JO"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 113,
+    "fields": {
+        "name": "Kazakhstan",
+        "short_name": "KZ"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 114,
+    "fields": {
+        "name": "Kenya",
+        "short_name": "KE"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 115,
+    "fields": {
+        "name": "Kiribati",
+        "short_name": "KI"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 116,
+    "fields": {
+        "name": "Korea, Democratic People'S Republic of",
+        "short_name": "KP"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 117,
+    "fields": {
+        "name": "Korea, Republic of",
+        "short_name": "KR"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 118,
+    "fields": {
+        "name": "Kuwait",
+        "short_name": "KW"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 119,
+    "fields": {
+        "name": "Kyrgyzstan",
+        "short_name": "KG"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 120,
+    "fields": {
+        "name": "Lao People'S Democratic Republic",
+        "short_name": "LA"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 121,
+    "fields": {
+        "name": "Latvia",
+        "short_name": "LV"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 122,
+    "fields": {
+        "name": "Lebanon",
+        "short_name": "LB"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 123,
+    "fields": {
+        "name": "Lesotho",
+        "short_name": "LS"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 124,
+    "fields": {
+        "name": "Liberia",
+        "short_name": "LR"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 125,
+    "fields": {
+        "name": "Libyan Arab Jamahiriya",
+        "short_name": "LY"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 126,
+    "fields": {
+        "name": "Liechtenstein",
+        "short_name": "LI"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 127,
+    "fields": {
+        "name": "Lithuania",
+        "short_name": "LT"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 128,
+    "fields": {
+        "name": "Luxembourg",
+        "short_name": "LU"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 129,
+    "fields": {
+        "name": "Macao",
+        "short_name": "MO"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 130,
+    "fields": {
+        "name": "Macedonia, The Former Yugoslav Republic of",
+        "short_name": "MK"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 131,
+    "fields": {
+        "name": "Madagascar",
+        "short_name": "MG"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 132,
+    "fields": {
+        "name": "Malawi",
+        "short_name": "MW"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 133,
+    "fields": {
+        "name": "Malaysia",
+        "short_name": "MY"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 134,
+    "fields": {
+        "name": "Maldives",
+        "short_name": "MV"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 135,
+    "fields": {
+        "name": "Mali",
+        "short_name": "ML"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 136,
+    "fields": {
+        "name": "Malta",
+        "short_name": "MT"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 137,
+    "fields": {
+        "name": "Marshall Islands",
+        "short_name": "MH"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 138,
+    "fields": {
+        "name": "Martinique",
+        "short_name": "MQ"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 139,
+    "fields": {
+        "name": "Mauritania",
+        "short_name": "MR"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 140,
+    "fields": {
+        "name": "Mauritius",
+        "short_name": "MU"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 141,
+    "fields": {
+        "name": "Mayotte",
+        "short_name": "YT"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 142,
+    "fields": {
+        "name": "Mexico",
+        "short_name": "MX"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 143,
+    "fields": {
+        "name": "Micronesia, Federated States of",
+        "short_name": "FM"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 144,
+    "fields": {
+        "name": "Moldova, Republic of",
+        "short_name": "MD"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 145,
+    "fields": {
+        "name": "Monaco",
+        "short_name": "MC"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 146,
+    "fields": {
+        "name": "Mongolia",
+        "short_name": "MN"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 147,
+    "fields": {
+        "name": "Montserrat",
+        "short_name": "MS"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 148,
+    "fields": {
+        "name": "Morocco",
+        "short_name": "MA"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 149,
+    "fields": {
+        "name": "Mozambique",
+        "short_name": "MZ"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 150,
+    "fields": {
+        "name": "Myanmar",
+        "short_name": "MM"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 151,
+    "fields": {
+        "name": "Namibia",
+        "short_name": "NA"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 152,
+    "fields": {
+        "name": "Nauru",
+        "short_name": "NR"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 153,
+    "fields": {
+        "name": "Nepal",
+        "short_name": "NP"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 154,
+    "fields": {
+        "name": "Netherlands",
+        "short_name": "NL"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 155,
+    "fields": {
+        "name": "Netherlands Antilles",
+        "short_name": "AN"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 156,
+    "fields": {
+        "name": "New Caledonia",
+        "short_name": "NC"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 157,
+    "fields": {
+        "name": "New Zealand",
+        "short_name": "NZ"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 158,
+    "fields": {
+        "name": "Nicaragua",
+        "short_name": "NI"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 159,
+    "fields": {
+        "name": "Niger",
+        "short_name": "NE"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 160,
+    "fields": {
+        "name": "Nigeria",
+        "short_name": "NG"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 161,
+    "fields": {
+        "name": "Niue",
+        "short_name": "NU"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 162,
+    "fields": {
+        "name": "Norfolk Island",
+        "short_name": "NF"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 163,
+    "fields": {
+        "name": "Northern Mariana Islands",
+        "short_name": "MP"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 164,
+    "fields": {
+        "name": "Norway",
+        "short_name": "NO"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 165,
+    "fields": {
+        "name": "Oman",
+        "short_name": "OM"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 166,
+    "fields": {
+        "name": "Pakistan",
+        "short_name": "PK"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 167,
+    "fields": {
+        "name": "Palau",
+        "short_name": "PW"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 168,
+    "fields": {
+        "name": "Palestinian Territory, Occupied",
+        "short_name": "PS"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 169,
+    "fields": {
+        "name": "Panama",
+        "short_name": "PA"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 170,
+    "fields": {
+        "name": "Papua New Guinea",
+        "short_name": "PG"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 171,
+    "fields": {
+        "name": "Paraguay",
+        "short_name": "PY"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 172,
+    "fields": {
+        "name": "Peru",
+        "short_name": "PE"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 173,
+    "fields": {
+        "name": "Philippines",
+        "short_name": "PH"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 174,
+    "fields": {
+        "name": "Pitcairn",
+        "short_name": "PN"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 175,
+    "fields": {
+        "name": "Poland",
+        "short_name": "PL"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 176,
+    "fields": {
+        "name": "Portugal",
+        "short_name": "PT"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 177,
+    "fields": {
+        "name": "Puerto Rico",
+        "short_name": "PR"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 178,
+    "fields": {
+        "name": "Qatar",
+        "short_name": "QA"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 179,
+    "fields": {
+        "name": "Reunion",
+        "short_name": "RE"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 180,
+    "fields": {
+        "name": "Romania",
+        "short_name": "RO"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 181,
+    "fields": {
+        "name": "Russian Federation",
+        "short_name": "RU"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 182,
+    "fields": {
+        "name": "RWANDA",
+        "short_name": "RW"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 183,
+    "fields": {
+        "name": "Saint Helena",
+        "short_name": "SH"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 184,
+    "fields": {
+        "name": "Saint Kitts and Nevis",
+        "short_name": "KN"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 185,
+    "fields": {
+        "name": "Saint Lucia",
+        "short_name": "LC"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 186,
+    "fields": {
+        "name": "Saint Pierre and Miquelon",
+        "short_name": "PM"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 187,
+    "fields": {
+        "name": "Saint Vincent and the Grenadines",
+        "short_name": "VC"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 188,
+    "fields": {
+        "name": "Samoa",
+        "short_name": "WS"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 189,
+    "fields": {
+        "name": "San Marino",
+        "short_name": "SM"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 190,
+    "fields": {
+        "name": "Sao Tome and Principe",
+        "short_name": "ST"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 191,
+    "fields": {
+        "name": "Saudi Arabia",
+        "short_name": "SA"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 192,
+    "fields": {
+        "name": "Senegal",
+        "short_name": "SN"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 193,
+    "fields": {
+        "name": "Serbia and Montenegro",
+        "short_name": "CS"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 194,
+    "fields": {
+        "name": "Seychelles",
+        "short_name": "SC"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 195,
+    "fields": {
+        "name": "Sierra Leone",
+        "short_name": "SL"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 196,
+    "fields": {
+        "name": "Singapore",
+        "short_name": "SG"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 197,
+    "fields": {
+        "name": "Slovakia",
+        "short_name": "SK"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 198,
+    "fields": {
+        "name": "Slovenia",
+        "short_name": "SI"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 199,
+    "fields": {
+        "name": "Solomon Islands",
+        "short_name": "SB"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 200,
+    "fields": {
+        "name": "Somalia",
+        "short_name": "SO"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 201,
+    "fields": {
+        "name": "South Africa",
+        "short_name": "ZA"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 202,
+    "fields": {
+        "name": "South Georgia and the South Sandwich Islands",
+        "short_name": "GS"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 203,
+    "fields": {
+        "name": "Spain",
+        "short_name": "ES"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 204,
+    "fields": {
+        "name": "Sri Lanka",
+        "short_name": "LK"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 205,
+    "fields": {
+        "name": "Sudan",
+        "short_name": "SD"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 206,
+    "fields": {
+        "name": "Suriname",
+        "short_name": "SR"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 207,
+    "fields": {
+        "name": "Svalbard and Jan Mayen",
+        "short_name": "SJ"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 208,
+    "fields": {
+        "name": "Swaziland",
+        "short_name": "SZ"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 209,
+    "fields": {
+        "name": "Sweden",
+        "short_name": "SE"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 210,
+    "fields": {
+        "name": "Switzerland",
+        "short_name": "CH"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 211,
+    "fields": {
+        "name": "Syrian Arab Republic",
+        "short_name": "SY"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 212,
+    "fields": {
+        "name": "Taiwan, Province of China",
+        "short_name": "TW"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 213,
+    "fields": {
+        "name": "Tajikistan",
+        "short_name": "TJ"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 214,
+    "fields": {
+        "name": "Tanzania, United Republic of",
+        "short_name": "TZ"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 215,
+    "fields": {
+        "name": "Thailand",
+        "short_name": "TH"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 216,
+    "fields": {
+        "name": "Timor-Leste",
+        "short_name": "TL"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 217,
+    "fields": {
+        "name": "Togo",
+        "short_name": "TG"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 218,
+    "fields": {
+        "name": "Tokelau",
+        "short_name": "TK"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 219,
+    "fields": {
+        "name": "Tonga",
+        "short_name": "TO"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 220,
+    "fields": {
+        "name": "Trinidad and Tobago",
+        "short_name": "TT"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 221,
+    "fields": {
+        "name": "Tunisia",
+        "short_name": "TN"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 222,
+    "fields": {
+        "name": "Turkey",
+        "short_name": "TR"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 223,
+    "fields": {
+        "name": "Turkmenistan",
+        "short_name": "TM"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 224,
+    "fields": {
+        "name": "Turks and Caicos Islands",
+        "short_name": "TC"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 225,
+    "fields": {
+        "name": "Tuvalu",
+        "short_name": "TV"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 226,
+    "fields": {
+        "name": "Uganda",
+        "short_name": "UG"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 227,
+    "fields": {
+        "name": "Ukraine",
+        "short_name": "UA"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 228,
+    "fields": {
+        "name": "United Arab Emirates",
+        "short_name": "AE"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 229,
+    "fields": {
+        "name": "United Kingdom",
+        "short_name": "GB"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 230,
+    "fields": {
+        "name": "United States",
+        "short_name": "US"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 231,
+    "fields": {
+        "name": "United States Minor Outlying Islands",
+        "short_name": "UM"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 232,
+    "fields": {
+        "name": "Uruguay",
+        "short_name": "UY"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 233,
+    "fields": {
+        "name": "Uzbekistan",
+        "short_name": "UZ"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 234,
+    "fields": {
+        "name": "Vanuatu",
+        "short_name": "VU"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 235,
+    "fields": {
+        "name": "Venezuela",
+        "short_name": "VE"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 236,
+    "fields": {
+        "name": "Viet Nam",
+        "short_name": "VN"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 237,
+    "fields": {
+        "name": "Virgin Islands, British",
+        "short_name": "VG"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 238,
+    "fields": {
+        "name": "Virgin Islands, U.S.",
+        "short_name": "VI"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 239,
+    "fields": {
+        "name": "Wallis and Futuna",
+        "short_name": "WF"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 240,
+    "fields": {
+        "name": "Western Sahara",
+        "short_name": "EH"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 241,
+    "fields": {
+        "name": "Yemen",
+        "short_name": "YE"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 242,
+    "fields": {
+        "name": "Zambia",
+        "short_name": "ZM"
+    }
+},
+{
+    "model": "core.country",
+    "pk": 243,
+    "fields": {
+        "name": "Zimbabwe",
+        "short_name": "ZW"
+    }
+},
+{
+    "model": "core.blog",
+    "pk": 1,
+    "fields": {
+        "title": "Streamlining Supply Chains: How Our Logistics Company Delivers Efficiency and Excellence",
+        "slug": "streamlining-supply-chains-how-our-logistics-company-delivers-efficiency-and-excellence",
+        "body": "<article>\r\n        <p>In today's fast-paced global economy, efficient logistics play a crucial role in ensuring businesses can meet the demands of their customers while maintaining cost-effectiveness. At [Your Logistics Company], we understand the intricate dance that is supply chain management, and we've honed our expertise to provide top-tier logistics solutions that help your business thrive.</p>\r\n        \r\n        <h2>The Backbone of Business: Logistics</h2>\r\n        \r\n        <p>Logistics may not always be in the spotlight, but it's undoubtedly the backbone of every successful business operation. From sourcing raw materials to delivering finished products, a well-managed logistics system ensures that goods flow seamlessly from one point to another. Here's how our logistics company can make a significant difference for your business:</p>\r\n        \r\n        <h3>1. Precision Planning</h3>\r\n        <p>In the world of logistics, meticulous planning is everything. Our team of experts takes the time to understand your unique requirements, whether you're managing a small e-commerce store or a large manufacturing facility. We create tailored logistics strategies that optimize routes, reduce transportation costs, and minimize delays.</p>\r\n        \r\n        <h3>2. State-of-the-Art Technology</h3>\r\n        <p>Technology is at the heart of modern logistics. Our company leverages cutting-edge software and tracking systems to provide real-time visibility into your supply chain. This means you can monitor your shipments, anticipate issues, and make informed decisions with confidence.</p>\r\n        \r\n        <h3>3. Sustainability in Action</h3>\r\n        <p>The environment matters, and our commitment to sustainability goes beyond just words. We implement eco-friendly practices, such as optimizing transportation routes to reduce emissions and using efficient packaging materials, to help reduce your carbon footprint.</p>\r\n        \r\n        <h3>4. Cost Efficiency</h3>\r\n        <p>Effective logistics shouldn't break the bank. Our cost-effective solutions are designed to maximize efficiency while minimizing expenses. This means better profit margins and more competitive pricing for your customers.</p>\r\n        \r\n        <h3>5. Reliability and Accountability</h3>\r\n        <p>With our logistics company, you can count on reliability and accountability every step of the way. We track your shipments from origin to destination, ensuring that your goods arrive on time and in perfect condition. Our 24/7 customer support is always ready to assist you with any inquiries or concerns.</p>\r\n        \r\n        <h3>6. Scalability</h3>\r\n        <p>Your business isn't static, and neither are your logistics needs. We offer scalable solutions that can adapt to your growth. Whether you're expanding to new markets or launching new products, we're ready to grow with you.</p>\r\n        \r\n        <h2>Partner with Us for Success</h2>\r\n        \r\n        <p>In a world where every minute and every dollar counts, choosing the right logistics partner is paramount. At [Your Logistics Company], we've made it our mission to be that partner. We're not just a logistics provider; we're an extension of your team, working tirelessly to ensure your supply chain runs like a well-oiled machine.</p>\r\n        \r\n        <p>Are you ready to take your logistics to the next level? Contact us today, and let's embark on a journey toward unparalleled efficiency and excellence in logistics management. Together, we'll ensure your business reaches new heights in the global marketplace.</p>\r\n    </article>",
+        "date": "2023-09-28T08:42:37Z",
+        "img": "blog/2.jpg"
+    }
+},
+{
+    "model": "core.blog",
+    "pk": 2,
+    "fields": {
+        "title": "The Importance of Efficient Inventory Management in Logistics",
+        "slug": "the-importance-of-efficient-inventory-management-in-logistics",
+        "body": "<p>Efficient inventory management is a critical component of successful logistics operations. It plays a pivotal role in ensuring that products are readily available when needed, reducing carrying costs, and minimizing the risk of stockouts.</p>\r\n    \r\n    <p>Inventory management involves the careful monitoring and control of a company's stock of goods. This includes determining how much inventory to hold, where to store it, and when to reorder. A well-optimized inventory management system can lead to numerous benefits:</p>\r\n    \r\n    <ul>\r\n        <li>Lower carrying costs and reduced storage expenses.</li>\r\n        <li>Minimized risk of overstocking or stockouts, leading to improved customer satisfaction.</li>\r\n        <li>Enhanced cash flow by preventing excess capital from being tied up in inventory.</li>\r\n        <li>Improved forecasting accuracy through data analysis and demand planning.</li>\r\n    </ul>\r\n    \r\n    <p>To achieve efficient inventory management, logistics companies can utilize advanced software solutions, implement Just-In-Time (JIT) strategies, and employ data analytics to make informed decisions. Additionally, collaboration with suppliers and the adoption of lean inventory practices are key strategies in modern logistics.</p>",
+        "date": "2023-09-28T12:09:43Z",
+        "img": "blog/3.jpg"
+    }
+},
+{
+    "model": "core.blog",
+    "pk": 3,
+    "fields": {
+        "title": "The Future of Last-Mile Delivery: Trends and Innovations",
+        "slug": "the-future-of-last-mile-delivery-trends-and-innovations",
+        "body": "<p>Last-mile delivery, the final leg of a product's journey from a distribution center to a customer's doorstep, is undergoing rapid transformation in response to changing consumer expectations and the growth of e-commerce.</p>\r\n    \r\n    <p>Here are some key trends and innovations shaping the future of last-mile delivery:</p>\r\n    \r\n    <ul>\r\n        <li><strong>Autonomous Delivery Vehicles:</strong> Companies are testing autonomous vehicles, including drones and self-driving delivery robots, to make deliveries more efficient and cost-effective.</li>\r\n        <li><strong>Drone Deliveries:</strong> Drones are being used for quick and convenient deliveries in urban and remote areas, reducing delivery times and costs.</li>\r\n        <li><strong>Sustainable Delivery Options:</strong> Eco-friendly delivery methods, such as electric vans and bikes, are gaining popularity as companies strive to reduce their carbon footprint.</li>\r\n        <li><strong>Advanced Route Optimization:</strong> AI-powered algorithms are helping delivery companies optimize routes to reduce fuel consumption and delivery times.</li>\r\n        <li><strong>Customer-Centric Solutions:</strong> Companies are offering features like real-time tracking, precise delivery windows, and delivery to alternative locations to enhance the customer experience.</li>\r\n    </ul>\r\n    \r\n    <p>These innovations are driven by the need for quicker, more efficient, and environmentally responsible delivery methods. As a logistics company, staying updated on these trends and adopting relevant technologies can give you a competitive edge in the market.</p>",
+        "date": "2023-09-28T12:15:11Z",
+        "img": "blog/1.jpg"
+    }
+},
+{
+    "model": "logistics.station",
+    "pk": 1,
+    "fields": {
+        "name": "Patriarkha",
+        "address": "Patriarkha Mstyslava Skrypnyka St, 5.",
+        "country": 227
+    }
+},
+{
+    "model": "logistics.station",
+    "pk": 2,
+    "fields": {
+        "name": "Kyiv",
+        "address": "Patriarkha Mstyslava Skrypnyka St, 5.",
+        "country": 227
+    }
+},
+{
+    "model": "logistics.shipment",
+    "pk": 1,
+    "fields": {
+        "package_name": "Luggage",
+        "weight": 75.0,
+        "tracking_number": "81932444",
+        "is_fragile": true,
+        "is_paid": false,
+        "shipment_fee": "4820.00",
+        "source_country": 227,
+        "source_address": "Ukraine, kyiv",
+        "destination_country": 230,
+        "destination_address": "2711 Berkshire Rd Bakersfield, CA 93313 USA",
+        "sender_name": "Anika Kumar",
+        "sender_address": "Ukraine kyiv",
+        "sender_phone_number": "+17187501598",
+        "sender_email": "anikakumar207@gmail.com",
+        "receiver_name": "Amrik pabla",
+        "receiver_address": "2711 Berkshire Rd Bakersfield, CA 93313 USA",
+        "receiver_phone_number": "+1 (661) 304-2338",
+        "receiver_email": "aspabla2@yahoo.com",
+        "date": "2023-10-02T21:18:58.789Z",
+        "_estimated_arrival_date": "2023-10-09T07:40:30Z",
+        "_estimated_departure_date": "2023-10-06T09:45:03Z"
+    }
+},
+{
+    "model": "logistics.shipment",
+    "pk": 2,
+    "fields": {
+        "package_name": "Luggage",
+        "weight": 75.0,
+        "tracking_number": "85762471",
+        "is_fragile": true,
+        "is_paid": false,
+        "shipment_fee": "4800.00",
+        "source_country": 227,
+        "source_address": "Ukraine, kyiv",
+        "destination_country": 230,
+        "destination_address": "3934 Claybank Rd Fairfield 94533",
+        "sender_name": "Harleen Singh",
+        "sender_address": "Ukraine, kyiv",
+        "sender_phone_number": "+17187501598",
+        "sender_email": "harleensingh061@gmail.com",
+        "receiver_name": "Amarjit Singh",
+        "receiver_address": "3934 Claybank Rd. Fairfield 94533",
+        "receiver_phone_number": "+1707-246-6986",
+        "receiver_email": "amarjeet1965@yahoo.com",
+        "date": "2023-10-03T13:32:40.260Z",
+        "_estimated_arrival_date": "2023-10-12T09:30:45Z",
+        "_estimated_departure_date": "2023-10-06T08:40:45Z"
+    }
+},
+{
+    "model": "logistics.shipment",
+    "pk": 3,
+    "fields": {
+        "package_name": "Box",
+        "weight": 80.4,
+        "tracking_number": "49139504",
+        "is_fragile": false,
+        "is_paid": false,
+        "shipment_fee": "4500.00",
+        "source_country": 229,
+        "source_address": "180 Parliament St, London SW1A 2BQ, United Kingdom",
+        "destination_country": 230,
+        "destination_address": "456 N MERIDIAN ST STE X  INDIANAPOLIS, IN 46204-9998",
+        "sender_name": "Stefan Cornish",
+        "sender_address": "Kings House, 36-37 King Street, London, EC2V 8BB, England.",
+        "sender_phone_number": "(+44) 7479342018",
+        "sender_email": "steffancornish@steffancornishsolicitors.com",
+        "receiver_name": "Brenda Buccellato Dunn",
+        "receiver_address": "4872 Cushendall Way Antioch, California 94531",
+        "receiver_phone_number": "(+1) 9257272228",
+        "receiver_email": "buccelb@live.com",
+        "date": "2024-04-09T09:54:16.049Z",
+        "_estimated_arrival_date": "2024-04-13T12:00:00Z",
+        "_estimated_departure_date": "2024-04-06T06:45:00Z"
+    }
+},
+{
+    "model": "logistics.shipment",
+    "pk": 4,
+    "fields": {
+        "package_name": "Fam Valuables/Goods",
+        "weight": 52.0,
+        "tracking_number": "94486412",
+        "is_fragile": false,
+        "is_paid": true,
+        "shipment_fee": "8500.00",
+        "source_country": 241,
+        "source_address": "Al Nad",
+        "destination_country": 15,
+        "destination_address": "Hietzinger Hauptstrabe 62/5 1130 Wien",
+        "sender_name": "Emma Lawrence",
+        "sender_address": "Al Nad",
+        "sender_phone_number": "+1 (818) 827-6223",
+        "sender_email": "emmalaw0819@gmail.com",
+        "receiver_name": "Andras Kun",
+        "receiver_address": "Hietzinger Hauptstrabe 62/5 1130 Wien",
+        "receiver_phone_number": "+43 68181523864",
+        "receiver_email": "kunandreas0103@gmail.com",
+        "date": "2024-06-12T17:08:40.768Z",
+        "_estimated_arrival_date": "2024-06-19T12:47:00Z",
+        "_estimated_departure_date": "2024-06-12T00:00:00Z"
+    }
+},
+{
+    "model": "logistics.statuslog",
+    "pk": 1,
+    "fields": {
+        "shipment": 1,
+        "status": "received",
+        "date": "2023-10-02T21:18:58Z"
+    }
+},
+{
+    "model": "logistics.statuslog",
+    "pk": 2,
+    "fields": {
+        "shipment": 1,
+        "status": "registered",
+        "date": "2023-10-02T12:34:00Z"
+    }
+},
+{
+    "model": "logistics.statuslog",
+    "pk": 3,
+    "fields": {
+        "shipment": 2,
+        "status": "registered",
+        "date": "2023-10-03T13:32:40.264Z"
+    }
+},
+{
+    "model": "logistics.statuslog",
+    "pk": 4,
+    "fields": {
+        "shipment": 2,
+        "status": "received",
+        "date": "2023-10-03T20:39:39Z"
+    }
+},
+{
+    "model": "logistics.statuslog",
+    "pk": 5,
+    "fields": {
+        "shipment": 1,
+        "status": "processing",
+        "date": "2024-04-06T19:06:02Z"
+    }
+},
+{
+    "model": "logistics.statuslog",
+    "pk": 6,
+    "fields": {
+        "shipment": 2,
+        "status": "processing",
+        "date": "2023-10-04T22:19:31Z"
+    }
+},
+{
+    "model": "logistics.statuslog",
+    "pk": 7,
+    "fields": {
+        "shipment": 2,
+        "status": "processing",
+        "date": "2023-10-04T22:20:59Z"
+    }
+},
+{
+    "model": "logistics.statuslog",
+    "pk": 8,
+    "fields": {
+        "shipment": 3,
+        "status": "registered",
+        "date": "2024-04-05T09:54:16Z"
+    }
+},
+{
+    "model": "logistics.statuslog",
+    "pk": 9,
+    "fields": {
+        "shipment": 3,
+        "status": "received",
+        "date": "2024-04-05T12:00:00Z"
+    }
+},
+{
+    "model": "logistics.statuslog",
+    "pk": 10,
+    "fields": {
+        "shipment": 3,
+        "status": "processing",
+        "date": "2024-04-05T13:20:00Z"
+    }
+},
+{
+    "model": "logistics.statuslog",
+    "pk": 11,
+    "fields": {
+        "shipment": 3,
+        "status": "in transit",
+        "date": "2024-04-06T06:45:00Z"
+    }
+},
+{
+    "model": "logistics.statuslog",
+    "pk": 13,
+    "fields": {
+        "shipment": 4,
+        "status": "registered",
+        "date": "2024-06-12T17:08:40.774Z"
+    }
+},
+{
+    "model": "logistics.statuslog",
+    "pk": 14,
+    "fields": {
+        "shipment": 4,
+        "status": "received",
+        "date": "2024-06-12T17:28:01Z"
+    }
+},
+{
+    "model": "logistics.statuslog",
+    "pk": 15,
+    "fields": {
+        "shipment": 4,
+        "status": "processing",
+        "date": "2024-06-12T17:29:14Z"
+    }
+},
+{
+    "model": "logistics.statuslog",
+    "pk": 16,
+    "fields": {
+        "shipment": 4,
+        "status": "in transit",
+        "date": "2024-06-13T17:29:14Z"
+    }
+},
+{
+    "model": "logistics.transitlog",
+    "pk": 1,
+    "fields": {
+        "shipment": 3,
+        "status": "arrived",
+        "station": "Indianapolis Int. Airport",
+        "date": "2024-04-13T12:28:03Z"
+    }
+},
+{
+    "model": "logistics.transitlog",
+    "pk": 2,
+    "fields": {
+        "shipment": 3,
+        "status": "processing",
+        "station": "Indianapolis Int. Airport",
+        "date": "2024-05-14T11:22:59Z"
+    }
+},
+{
+    "model": "logistics.transitlog",
+    "pk": 3,
+    "fields": {
+        "shipment": 3,
+        "status": "arrived",
+        "station": "TSA Department",
+        "date": "2024-05-14T16:03:00Z"
+    }
+},
+{
+    "model": "logistics.transitlog",
+    "pk": 4,
+    "fields": {
+        "shipment": 4,
+        "status": "arrived",
+        "station": "LIS, Portugal",
+        "date": "2024-06-16T08:30:54Z"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2023-10-02T21:19:05.044Z",
+        "user": [
+            "frank"
+        ],
+        "content_type": [
+            "logistics",
+            "shipment"
+        ],
+        "object_id": "1",
+        "object_repr": "81932444",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2023-10-02T21:28:10.299Z",
+        "user": [
+            "frank"
+        ],
+        "content_type": [
+            "logistics",
+            "shipment"
+        ],
+        "object_id": "1",
+        "object_repr": "81932444",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Shipment fee\", \"Sender email\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2023-10-02T21:51:32.963Z",
+        "user": [
+            "frank"
+        ],
+        "content_type": [
+            "logistics",
+            "shipment"
+        ],
+        "object_id": "1",
+        "object_repr": "81932444",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Shipment fee\", \"Receiver name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2023-10-02T23:14:34.680Z",
+        "user": [
+            "frank"
+        ],
+        "content_type": [
+            "logistics",
+            "station"
+        ],
+        "object_id": "1",
+        "object_repr": "Station object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2023-10-02T23:15:59.796Z",
+        "user": [
+            "frank"
+        ],
+        "content_type": [
+            "logistics",
+            "statuslog"
+        ],
+        "object_id": "1",
+        "object_repr": "81932444 - received",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2023-10-02T23:20:10.090Z",
+        "user": [
+            "frank"
+        ],
+        "content_type": [
+            "logistics",
+            "shipment"
+        ],
+        "object_id": "1",
+        "object_repr": "81932444",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2023-10-03T05:32:41.155Z",
+        "user": [
+            "frank"
+        ],
+        "content_type": [
+            "logistics",
+            "statuslog"
+        ],
+        "object_id": "2",
+        "object_repr": "81932444 - registered",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2023-10-03T13:32:44.880Z",
+        "user": [
+            "frank"
+        ],
+        "content_type": [
+            "logistics",
+            "shipment"
+        ],
+        "object_id": "2",
+        "object_repr": "85762471",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2023-10-03T13:35:50.169Z",
+        "user": [
+            "frank"
+        ],
+        "content_type": [
+            "logistics",
+            "station"
+        ],
+        "object_id": "2",
+        "object_repr": "Station object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2023-10-03T13:38:56.732Z",
+        "user": [
+            "frank"
+        ],
+        "content_type": [
+            "logistics",
+            "statuslog"
+        ],
+        "object_id": "4",
+        "object_repr": "85762471 - received",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2023-10-03T17:59:24.041Z",
+        "user": [
+            "frank"
+        ],
+        "content_type": [
+            "logistics",
+            "shipment"
+        ],
+        "object_id": "1",
+        "object_repr": "81932444",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Shipment fee\", \"Destination address\", \"Receiver address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2023-10-03T18:00:46.584Z",
+        "user": [
+            "frank"
+        ],
+        "content_type": [
+            "logistics",
+            "shipment"
+        ],
+        "object_id": "1",
+        "object_repr": "81932444",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2023-10-03T18:01:00.364Z",
+        "user": [
+            "frank"
+        ],
+        "content_type": [
+            "logistics",
+            "shipment"
+        ],
+        "object_id": "1",
+        "object_repr": "81932444",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2023-10-04T18:11:40.279Z",
+        "user": [
+            "frank"
+        ],
+        "content_type": [
+            "logistics",
+            "shipment"
+        ],
+        "object_id": "2",
+        "object_repr": "85762471",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Shipment fee\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2024-04-06T19:06:07.980Z",
+        "user": [
+            "human"
+        ],
+        "content_type": [
+            "logistics",
+            "statuslog"
+        ],
+        "object_id": "5",
+        "object_repr": "81932444 - processing",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2024-04-06T22:19:40.947Z",
+        "user": [
+            "human"
+        ],
+        "content_type": [
+            "logistics",
+            "statuslog"
+        ],
+        "object_id": "6",
+        "object_repr": "85762471 - processing",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2024-04-06T22:21:04.421Z",
+        "user": [
+            "human"
+        ],
+        "content_type": [
+            "logistics",
+            "statuslog"
+        ],
+        "object_id": "7",
+        "object_repr": "85762471 - processing",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2024-04-09T09:54:20.154Z",
+        "user": [
+            "human"
+        ],
+        "content_type": [
+            "logistics",
+            "shipment"
+        ],
+        "object_id": "3",
+        "object_repr": "49139504",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2024-04-09T09:57:58.109Z",
+        "user": [
+            "human"
+        ],
+        "content_type": [
+            "logistics",
+            "shipment"
+        ],
+        "object_id": "3",
+        "object_repr": "49139504",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\" estimated departure date\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2024-04-09T10:16:48.549Z",
+        "user": [
+            "human"
+        ],
+        "content_type": [
+            "logistics",
+            "statuslog"
+        ],
+        "object_id": "9",
+        "object_repr": "49139504 - received",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2024-04-09T10:17:08.282Z",
+        "user": [
+            "human"
+        ],
+        "content_type": [
+            "logistics",
+            "statuslog"
+        ],
+        "object_id": "8",
+        "object_repr": "49139504 - registered",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2024-04-09T10:17:42.600Z",
+        "user": [
+            "human"
+        ],
+        "content_type": [
+            "logistics",
+            "statuslog"
+        ],
+        "object_id": "9",
+        "object_repr": "49139504 - received",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Date\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2024-04-09T10:20:53.719Z",
+        "user": [
+            "human"
+        ],
+        "content_type": [
+            "logistics",
+            "statuslog"
+        ],
+        "object_id": "10",
+        "object_repr": "49139504 - processing",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2024-04-09T10:22:23.291Z",
+        "user": [
+            "human"
+        ],
+        "content_type": [
+            "logistics",
+            "statuslog"
+        ],
+        "object_id": "11",
+        "object_repr": "49139504 - in transit",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2024-04-09T10:23:35.020Z",
+        "user": [
+            "human"
+        ],
+        "content_type": [
+            "logistics",
+            "shipment"
+        ],
+        "object_id": "3",
+        "object_repr": "49139504",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\" estimated departure date\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2024-04-09T10:41:19.558Z",
+        "user": [
+            "human"
+        ],
+        "content_type": [
+            "logistics",
+            "statuslog"
+        ],
+        "object_id": "8",
+        "object_repr": "49139504 - registered",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Date\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2024-04-13T16:29:32.839Z",
+        "user": [
+            "human"
+        ],
+        "content_type": [
+            "logistics",
+            "transitlog"
+        ],
+        "object_id": "1",
+        "object_repr": "shipment 49139504, arrived at station-Indianapolis Int. Airport on 13 Apr, 2024. 12:28 PM",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2024-05-15T09:06:55.337Z",
+        "user": [
+            "human"
+        ],
+        "content_type": [
+            "logistics",
+            "transitlog"
+        ],
+        "object_id": "1",
+        "object_repr": "shipment 49139504, dispatched from station-Indianapolis Int. Airport on 13 Apr, 2024. 12:28 PM",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2024-05-15T09:07:50.609Z",
+        "user": [
+            "human"
+        ],
+        "content_type": [
+            "logistics",
+            "transitlog"
+        ],
+        "object_id": "1",
+        "object_repr": "shipment 49139504, arrived at station-Indianapolis Int. Airport on 13 Apr, 2024. 12:28 PM",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2024-05-15T09:07:50.694Z",
+        "user": [
+            "human"
+        ],
+        "content_type": [
+            "logistics",
+            "transitlog"
+        ],
+        "object_id": "1",
+        "object_repr": "shipment 49139504, arrived at station-Indianapolis Int. Airport on 13 Apr, 2024. 12:28 PM",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2024-05-15T09:10:35.586Z",
+        "user": [
+            "human"
+        ],
+        "content_type": [
+            "logistics",
+            "statuslog"
+        ],
+        "object_id": "12",
+        "object_repr": "49139504 - processing",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2024-05-15T09:11:25.803Z",
+        "user": [
+            "human"
+        ],
+        "content_type": [
+            "logistics",
+            "statuslog"
+        ],
+        "object_id": "12",
+        "object_repr": "49139504 - processing",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2024-05-15T09:26:41.134Z",
+        "user": [
+            "human"
+        ],
+        "content_type": [
+            "logistics",
+            "transitlog"
+        ],
+        "object_id": "2",
+        "object_repr": "shipment 49139504, dispatched from station-Indianapolis Int. Airport on 14 May, 2024. 11:22 AM",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2024-05-15T09:28:01.076Z",
+        "user": [
+            "human"
+        ],
+        "content_type": [
+            "logistics",
+            "transitlog"
+        ],
+        "object_id": "3",
+        "object_repr": "shipment 49139504, dispatched from station-Indianapolis Int. Airport on 14 May, 2024. 02:03 PM",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2024-05-15T09:30:14.484Z",
+        "user": [
+            "human"
+        ],
+        "content_type": [
+            "logistics",
+            "transitlog"
+        ],
+        "object_id": "3",
+        "object_repr": "shipment 49139504, arrived at station-TSA Department on 14 May, 2024. 04:03 PM",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\", \"Station\", \"Date\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2024-05-15T09:30:14.709Z",
+        "user": [
+            "human"
+        ],
+        "content_type": [
+            "logistics",
+            "transitlog"
+        ],
+        "object_id": "3",
+        "object_repr": "shipment 49139504, arrived at station-TSA Department on 14 May, 2024. 04:03 PM",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2024-06-12T17:08:42.604Z",
+        "user": [
+            "human"
+        ],
+        "content_type": [
+            "logistics",
+            "shipment"
+        ],
+        "object_id": "4",
+        "object_repr": "94486412",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2024-06-12T17:28:32.475Z",
+        "user": [
+            "human"
+        ],
+        "content_type": [
+            "logistics",
+            "statuslog"
+        ],
+        "object_id": "14",
+        "object_repr": "94486412 - received",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2024-06-12T17:29:16.215Z",
+        "user": [
+            "human"
+        ],
+        "content_type": [
+            "logistics",
+            "statuslog"
+        ],
+        "object_id": "15",
+        "object_repr": "94486412 - processing",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2024-06-14T07:27:18.575Z",
+        "user": [
+            "human"
+        ],
+        "content_type": [
+            "logistics",
+            "shipment"
+        ],
+        "object_id": "4",
+        "object_repr": "94486412",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\" estimated arrival date\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2024-06-14T07:38:18.062Z",
+        "user": [
+            "human"
+        ],
+        "content_type": [
+            "logistics",
+            "shipment"
+        ],
+        "object_id": "4",
+        "object_repr": "94486412",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Destination address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2024-06-14T07:40:01.986Z",
+        "user": [
+            "human"
+        ],
+        "content_type": [
+            "logistics",
+            "statuslog"
+        ],
+        "object_id": "16",
+        "object_repr": "94486412 - in transit",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2024-06-16T17:08:04.644Z",
+        "user": [
+            "human"
+        ],
+        "content_type": [
+            "logistics",
+            "transitlog"
+        ],
+        "object_id": "4",
+        "object_repr": "shipment 94486412, arrived at station-LIS, Portugal on 16 Jun, 2024. 08:30 AM",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]

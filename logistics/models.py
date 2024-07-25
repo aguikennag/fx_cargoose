@@ -8,7 +8,7 @@ from core.models import Country
 
 
 class Station(models.Model) :
-    name = models.CharField(max_length=30)
+    name = models.CharField(max_length=50)
     address = models.CharField(max_length=100)
     country = models.ForeignKey(Country, related_name = 'stations',on_delete = models.CASCADE)
 
@@ -22,9 +22,9 @@ class Shipment(models.Model) :
         return tracking_number[:8]
     
     #package info
-    package_name = models.CharField(max_length=20)
+    package_name = models.CharField(max_length=50)
     weight = models.FloatField(help_text="in kg")   #in kg
-    tracking_number = models.CharField(default= get_tracking_number, max_length=8,blank = True)
+    tracking_number = models.CharField(default= get_tracking_number, max_length=20,blank = True)
     is_fragile = models.BooleanField(default=False)
     is_paid = models.BooleanField(default=False,blank = True)
     shipment_fee = models.DecimalField(decimal_places=2,max_digits=100,help_text = "in dollars($)")
@@ -42,7 +42,7 @@ class Shipment(models.Model) :
     sender_email = models.EmailField()
 
     #receiver info
-    receiver_name = models.CharField(max_length = 40)
+    receiver_name = models.CharField(max_length = 50)
     receiver_address = models.CharField(max_length = 200)
     receiver_phone_number = models.CharField(max_length = 20)
     receiver_email = models.EmailField()
@@ -207,7 +207,7 @@ class StatusLog(models.Model) :
     )
 
     shipment = models.ForeignKey(Shipment,related_name = "status_logs",on_delete = models.CASCADE)
-    status  = models.CharField(max_length = 10,choices = StatusChoices)
+    status  = models.CharField(max_length = 20,choices = StatusChoices)
     date = models.DateTimeField() #editable
 
     def __str__(self) :
@@ -251,9 +251,9 @@ class TransitLog(models.Model) :
 
     )
     shipment = models.ForeignKey(Shipment,related_name = 'transit_logs',on_delete = models.CASCADE)
-    status  = models.CharField(max_length = 10,choices = StatusChoices)
+    status  = models.CharField(max_length = 20,choices = StatusChoices)
     #station = models.ForeignKey(Station,on_delete = models.CASCADE,related_name ="transit_logs")
-    station = models.CharField(max_length=30)
+    station = models.CharField(max_length=50)
     date = models.DateTimeField()  #editable
 
 

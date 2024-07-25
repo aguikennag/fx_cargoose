@@ -14,7 +14,8 @@ SECRET_KEY = '24q_*&tn+5k_*6h6$nsccghwwb#8b%v4i)1h(wd08_02_-(czt'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv('DEBUG', 'True') == 'True'
+
 ALLOWED_HOSTS = ['*']
 
 LOGGING = {
@@ -224,6 +225,4 @@ STATIC_ROOT = os.path.join(BASE_DIR,"asset")
 STATIC_URL = '/static/'
 #STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
  
-
-
-
+DEFAULT_AUTO_FIELD='django.db.models.AutoField'
