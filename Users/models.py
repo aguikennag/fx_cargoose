@@ -13,8 +13,8 @@ import random
 
 
 class Country(models.Model) :
-    name = models.CharField(max_length=20)
-    short_name = models.CharField(max_length=5)
+    name = models.CharField(max_length=50)
+    short_name = models.CharField(max_length=20)
 
     def __str__(self) :
         return "{}({})".format(self.name,self.short_name)
@@ -28,8 +28,8 @@ class User(AbstractUser) :
         filename = "{}.{}".format(instance.name,filename.split('.')[1])
         return "users/dp/{}".format(filename)
     
-    name = models.CharField(max_length=30)
-    phone_number = models.CharField(max_length = 30,blank = False,null = False)
+    name = models.CharField(max_length=50)
+    phone_number = models.CharField(max_length = 50,blank = False,null = False)
     picture = models.FileField(upload_to = get_path)
    
 
